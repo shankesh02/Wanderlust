@@ -34,3 +34,6 @@ The MySQL database schema consists of tables for users, bookings, flights, train
 - **Booking:** Explore various travel options, select preferred choices, and complete bookings seamlessly.
 
 
+### Thank you for exploring Wanderlust! We hope this application simplifies your travel planning experience.
+### Happy traveling! ✈️🌍
+
