@@ -1,0 +1,217 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+            integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>
+            Air Activities 
+        </title>
+        <link rel="icon" type="image/x-icon" href="../static/Wanderlust.png">
+        <style>
+            html,body{
+                margin: 0;
+                height: 100%;
+            }
+            body{
+                background: linear-gradient(to bottom, skyblue, navy);
+                background-attachment: fixed;
+            }
+            .logo{
+                position: relative;
+                padding-left: 40px;
+                top: 10px;
+            }
+            .icons{
+                position: relative;
+                margin-left: 30%;
+                border-radius: 50%;
+                top: -50px;
+            }
+            p.activity{
+                height: 250px;
+                border-radius: 5px;
+                background-color: white;
+                position: relative;
+                left: 200px;
+                width: 70%;
+                font-size: larger;
+                top: -40px;
+            }
+            .gh1{
+                position: relative;
+                top: -157px;
+                left: 50px;
+            }
+            .heading{
+                position: relative;
+                display: flex;
+                left: 205px;
+                top: -27px;
+            }
+            .time{
+                position: relative;
+                display: flex;
+                left: 250px;
+                top: -38px;
+            }
+            .info{
+                
+                position: relative;
+                display: flex;
+                left: 205px;
+                top: -60px;
+            }
+            #button{
+                border: solid skyblue;
+            }
+            .copyrights{
+                background-color: black;
+                position: relative;
+                font-size: larger;
+                color: white;
+                height: 100px;
+            }
+            .copy{
+                position: relative;
+                float: right;
+                color: white;   
+                right: 50px;
+                top: 25px; 
+            }
+            .social-media{
+                position: relative;
+                float: left;  
+                left: 50px;
+                top: 40px;
+            }
+            
+        </style>
+    </head>
+    <script>
+        function fbooking(a,h,p)
+        {
+            window.location.href = `/abook/${a}/${h}/${p}`;
+        }
+    </script>
+    <body>
+        <div class="logo">
+            <a href="{{url_for('home')}}" name="logo">
+                <img src="../static/Wanderlust.png" height="50px" width="80px">
+            </a>
+            
+        </div>
+        <div class="icons">
+            <a href="{{url_for('flights')}}" >
+                <img src="../static/flights.png" height="70px" width="70px">
+            </a>
+            <a href="{{ url_for('hotels')}}">
+                <img src="../static/hotels.png" height="70px" width="70px" style="position: relative; left: 30px;">
+            </a>
+            <a href="{{ url_for('holiday')}}">
+                <img src="../static/Holiday Packages.png" height="70px" width="100px" style="position: relative; left: 60px;">
+            </a>
+            <a href="{{ url_for('trains')}}">
+                <img src="../static/Trains.png" height="70px" width="70px" style="position: relative; left: 90px;">
+            </a>
+            <a href="{{ url_for('activity')}}">
+                <img src="../static/Activityc.png" height="70px" width="70px" style="position: relative; left: 120px;">
+            </a>
+        </div>
+
+        <img src="../static/air_activities.png" height="70px" width="70px" style="border-radius: 20%; position: relative; left:50px; top:50px;">
+        
+        <p class="activity">
+            <img src="../static/air_activity1.png" height="200px" width="200px" style="position: relative; top: 25px; left: 25px;">
+            <span class="gh1">
+                <font class="heading" style="font-size: xx-large;"><b>Las Vegas Hot air ballon ride</b><br></font>
+                <mark style="background-color: rgb(14, 97, 129); color: white; position: relative; left: 210px; top: -10px;">&nbsp;4.4&nbsp;</mark>   
+                <font class="time" style="font-size: 20px;">&nbsp;|&nbsp; &#128344;1 Hour</font><br><br>
+                <font class="info" style="font-size: 15px;">Take to the skies over the Mojave Desert on this stunning early-morning hot<br>
+                    air balloon flight.  Sunrise flights depart daily, weather permitting, and take you<br>
+                    on the adventure of a lifetime with serene, tranquil views from high above. Experience<br>
+                    Western Nevada and Eastern California from soaring heights of 10,000 feet and more!<br>
+                    Included is a traditional post-flight Champagne celebration, certificate your flight.</font><br>
+                <font style="font-size: x-large; position: relative; top: -215px; left: 770px; font-weight: bold;">&#8377;7,584</font><br>
+                <font style="font-size: small; position: relative; top: -215px; left: 778px; color: grey;">Per Person</font><br>
+                <button id="button" onclick="fbooking('Las Vegas Hot air ballon ride',1,7584)" style="position: relative; left: 750px; top: -170px; background-color: skyblue; height: 30px; width: 100px; border-radius: 50px;">
+                <b>Book Now</b>
+                </button>
+            </span>
+        </p>
+
+        <p class="activity">
+            <img src="../static/air_activity2.png" height="200px" width="200px" style="position: relative; top: 25px; left: 25px;">
+            <span class="gh1">
+                <font class="heading" style="font-size: xx-large;"><b>Seaplane flight</b><br></font>
+                <mark style="background-color: rgb(14, 97, 129); color: white; position: relative; left: 210px; top: -10px;">&nbsp;4.1&nbsp;</mark>   
+                <font class="time" style="font-size: 20px;">&nbsp;|&nbsp; &#128344; 3 Hours</font><br><br>
+                <font class="info" style="font-size: 15px;">Fly from Vancouver to Victoria on a 35-minute flight by seaplane, search for Orcas<br>
+                    on a whale watching cruise on Haro Strait. Be kind to the environment with the most <br>
+                    environmentally friendly form of transport between Vancouver, the mainland carbon <br>
+                    offset levy included! Upon arrival in Victoria set off on an exciting 3-hour cruise<br>
+                    through Haro Strait, native home to orcas (killer whales), sea lions, seals, followed<br>
+                    by a return flight to the mainland. </font><br>
+                    <font style="font-size: medium; position: relative; top: -245px; left: 800px; color: grey;"><del>&#8377;6,694</del></font><br>
+                <font style="font-size: x-large; position: relative; top: -245px; left: 778px; font-weight: bold;">&#8377;5,000</font><br>
+                <font style="font-size: small; position: relative; top: -245px; left: 787px; color: grey;">Per Person</font><br>
+                <button id="button" onclick="fbooking('Seaplane flight',3,5000)" style="position: relative; left: 757px; top: -202px; background-color: skyblue; height: 30px; width: 100px; border-radius: 50px;">
+                <b>Book Now</b>
+                </button>
+            </span>
+        </p>
+
+        <p class="activity">
+            <img src="../static/air_activity3.png" height="200px" width="200px" style="position: relative; top: 25px; left: 25px;">
+            <span class="gh1">
+                <font class="heading" style="font-size: xx-large;"><b>Milford Sound Glacier Flight</b><br></font>
+                <mark style="background-color: rgb(14, 97, 129); color: white; position: relative; left: 210px; top: -10px;">&nbsp;4.5&nbsp;</mark>   
+                <font class="time" style="font-size: 20px;">&nbsp;|&nbsp; &#128344; 1 Hour</font><br><br>
+                <font class="info" style="font-size: 15px;">Fly further and see more when you fly from Wanaka.Fly to Milford Sound through<br>
+                    two of New Zealand’s most picturesque national parks. View alpine lakes nestled<br>
+                    amongst snowcapped mountain peaks and pristine glaciers, with vast rain forest<br>
+                    and cascading  waterfalls visible from every seat! Locally owned with an<br>
+                    excellent safety record.</font><br>
+                    <font style="font-size: medium; position: relative; top: -230px; left: 790px; color: grey;"><del>&#8377;9,660</del></font><br>
+                <font style="font-size: x-large; position: relative; top: -230px; left: 770px; font-weight: bold;">&#8377;8,900</font><br>
+                <font style="font-size: small; position: relative; top: -230px; left: 778px; color: grey;">Per Person</font><br>
+                <button id="button" onclick="fbooking('Milford Sound Glacier Flight',1,8900)" style="position: relative; left: 757px; top: -180px; background-color: skyblue; height: 30px; width: 100px; border-radius: 50px;">
+                <b>Book Now</b>
+                </button>
+            </span>
+        </p>
+
+        <p class="activity">
+            <img src="../static/air_activity4.png" height="200px" width="200px" style="position: relative; top: 25px; left: 25px;">
+            <span class="gh1">
+                <font class="heading" style="font-size: xx-large;"><b>Mt Tarawera Helicopter Tour</b><br></font>
+                <mark style="background-color: rgb(14, 97, 129); color: white; position: relative; left: 210px; top: -10px;">&nbsp;4.6&nbsp;</mark>   
+                <font class="time" style="font-size: 20px;">&nbsp;|&nbsp; &#128344; 2 Hours</font><br><br>
+                <font class="info" style="font-size: 15px;">Follow the eruption trail of Mt. Tarawera on a helicopter tour that includes a<br>
+                    landing on the volcano. Best viewed from the air, the rugged landscape of this <br>
+                    geothermal wonder is set amid a series of crater lakes.You'll take off from Rotorua<br>
+                    and soar above the Northern Lakes district, listening to commentary about the <br>
+                    region's history and geology  from the pilot-guide. Then take a 20-minute walking<br>
+                    tour for up-close photo ops of the volcanic scenery.</font><br>
+                    <font style="font-size: medium; position: relative; top: -240px; left: 785px; color: grey;"><del>&#8377;11,455</del></font><br>
+                <font style="font-size: x-large; position: relative; top: -240px; left: 760px; font-weight: bold;">&#8377;10,200</font><br>
+                <font style="font-size: small; position: relative; top: -240px; left: 780px; color: grey;">Per Person</font><br>
+                <button id="button" onclick="fbooking('Mt Tarawera Helicopter Tour',2,10200)" style="position: relative; left: 750px; top: -202px; background-color: skyblue; height: 30px; width: 100px; border-radius: 50px;">
+                <b>Book Now</b>
+                </button>
+            </span>
+        </p>
+        <br><br><br><br><br><br><br><br>
+        <div class="copyrights">
+            <span class="copy">
+                &copy; 2023 WANDERLUST PVT.LTD.<br>Country India
+            </span>
+            <span class="social-media">
+                <i class="fab fa-facebook"></i>&emsp;<i class="fab fa-instagram"></i>&emsp;<i class="fab fa-twitter"></i>
+            </span>            
+        </div>
+    </body>
+</html>

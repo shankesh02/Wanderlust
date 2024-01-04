@@ -1,0 +1,209 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+            integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>
+            Banglore Hotels 
+        </title>
+        <link rel="icon" type="image/x-icon" href="../static/Wanderlust.png">
+    </head>
+    <style>
+        html,body{
+            margin: 0;
+            height: 100%;
+        }
+        body{
+            background: linear-gradient(to bottom, skyblue, navy);
+            background-attachment: fixed ;
+        }
+        .logo{
+            position: relative;
+            padding-left: 40px;
+            top: 10px;
+        }
+        .icons{
+            position: relative;
+            margin-left: 30%;
+            border-radius: 50%;
+            top: -50px;
+        }
+        p.hotel{
+            height: 250px;
+            border-radius: 5px;
+            background-color: white;
+            position: relative;
+            left: 200px;
+            width: 70%;
+            font-size: larger;
+            top: -40px;
+        }
+        .gh1{
+            position: relative;
+            top: -157px;
+            left: 50px;
+        }
+        .heading{
+            position: relative;
+            display: flex;
+            left: 205px;
+        }
+        .landmark{
+            position: relative;
+            display: flex;
+            left: 205px;
+        }
+        .info{
+            position: relative;
+            display: flex;
+            left: 205px;
+        }
+        #button{
+            border: solid skyblue;
+        }
+        .copyrights{
+            background-color: black;
+            position: relative;
+            /* top: 200px; */
+            /* padding-left: 68%; */
+            font-size: larger;
+            color: white;
+            height: 100px;
+        }
+        .copy{
+            position: relative;
+            float: right;
+            color: white;   
+            right: 50px;
+            top: 25px; 
+        }
+        .social-media{
+            position: relative;
+            float: left;  
+            left: 50px;
+            top: 40px;
+        }
+    </style>
+    <script>
+        function fbooking(pl,p)
+        {
+            window.location.href = `/hbook/${pl}/${p}`;
+        }
+    </script>
+    <body>
+        <div class="logo">
+            <a href="{{url_for('home')}}" name="logo">
+                <img src="../static/Wanderlust.png" height="50px" width="80px">
+            </a>
+            
+        </div>
+        <div class="icons">
+            <a href="{{url_for('flights')}}" >
+                <img src="../static/flights.png" height="70px" width="70px">
+            </a>
+            <a href="{{ url_for('hotels')}}">
+                <img src="../static/Hotelc.png" height="70px" width="70px" style="position: relative; left: 30px;">
+            </a>
+            <a href="{{ url_for('holiday')}}">
+                <img src="../static/Holiday Packages.png" height="70px" width="100px" style="position: relative; left: 60px;">
+            </a>
+            <a href="{{ url_for('trains')}}">
+                <img src="../static/Trains.png" height="70px" width="70px" style="position: relative; left: 90px;">
+            </a>
+            <a href="{{ url_for('activity')}}">
+                <img src="../static/Activities.png" height="70px" width="70px" style="position: relative; left: 120px;">
+            </a>
+        </div>
+
+        <img src="../static/bangalore.jpg" height="70px" width="70px" style="border-radius: 50%; position: relative; left:50px; top:50px;">
+        
+        <p class="hotel">
+            <img src="../static/bangalore_hotel1.png" height="200px" width="200px" style="position: relative; top: 25px; left: 25px;">
+            <span class="gh1"><mark style="background-color: rgb(14, 97, 129); color: white;">&nbsp;3.9&nbsp;</mark>&emsp;&#11088;&#11088;&#11088;&#11088;<br>
+                <font class="heading" style="font-size: xx-large;"><b>Howard Johnson by Wyndham</b><br></font>
+                <font class="landmark" style="color: grey; font-size: large;">Near Manyata Tech Park</font><br><br>
+                <font class="info" style="font-size: 15px; position: relative; top: -20px;">Location of the Hotel is near Manyata Tech Park. Full Address of property is<br>
+                No 132, Thanisandra Main Rd, near Manyata Embassy Business Park, <br>
+                Nagawara Junction. This Hotel have 3.9 out of 5 rating where 4.6/5 for room <br>
+                and 4.2/5 for hospitality and 4.1/5 for cleanliness. Top facilities of<br>
+                this hotel are lounge, free parking and business centre.
+            </font><br>
+                <font style="font-size: medium; position: relative; top: -190px; left: 780px; color: grey;"><del>&#8377;11,200</del></font><br>
+                <font style="font-size: x-large; position: relative; top: -190px; left: 770px; font-weight: bold;">&#8377;5,423</font><br>
+                <font style="font-size: small; position: relative; top: -190px; left: 784px; color: grey;">Per Night</font><br>
+                <button id="button" onclick="fbooking('Howard Johnson by Wyndham',5423)" style="position: relative; left: 740px; top: -150px; background-color: skyblue; height: 30px; width: 100px; border-radius: 50px;">
+                <b>Book Now</b>
+                </button>
+            </span>
+        </p>
+
+        <p class="hotel">
+            <img src="../static/bangalore_hotel2.png" height="200px" width="200px" style="position: relative; top: 25px; left: 25px;">
+            <span class="gh1"><mark style="background-color: rgb(14, 97, 129); color: white;">&nbsp;3.7&nbsp;</mark>&emsp;&#11088;&#11088;&#11088;&#11088;&#11088;<br>
+                <font class="heading" style="font-size: xx-large;"><b>The Lalit Ashok Banglore</b><br></font>
+                <font class="landmark" style="color: grey; font-size: large;">Seshadripuram&nbsp;|&nbsp;2.8 km from Bangalore Palace</font><br><br>
+                <font class="info" style="font-size: 15px; position: relative; top: -20px;">Location of the Hotel is Seshadripuram, Kumara Kruoa High Grounds. <br>
+                It's a 5 star hotel with overall rating 3.7 out of 5 where 4.4/5 for location <br>
+                and 4.1/5 for cleanliness and 4.1/5 for hospitality. Top facilities of this <br>
+                resort are lounge, free parking and business centre.</font><br>
+                <font style="font-size: medium; position: relative; top: -180px; left: 784px; color: grey;"><del>&#8377;11,000</del></font><br>
+                <font style="font-size: x-large; position: relative; top: -180px; left: 770px; font-weight: bold;">&#8377;6,204</font><br>
+                <font style="font-size: small; position: relative; top: -180px; left: 784px; color: grey;">Per Night</font><br>
+                <button id="button" onclick="fbooking('The Lalit Ashok Banglore',6204)" style="position: relative; left: 740px; top: -140px; background-color: skyblue; height: 30px; width: 100px; border-radius: 50px;">
+                <b>Book Now</b>
+                </button>
+            </span>
+        </p>
+
+        <p class="hotel">
+            <img src="../static/bangalore_hotel3.png" height="200px" width="200px" style="position: relative; top: 25px; left: 25px;">
+            <span class="gh1"><mark style="background-color: rgb(14, 97, 129); color: white;">&nbsp;4.2&nbsp;</mark>&emsp;&#11088;&#11088;&#11088;&#11088;&#11088;<br>
+                <font class="heading" style="font-size: xx-large;"><b>Palm Meadows Resort</b><br></font>
+                <font class="landmark" style="color: grey; font-size: large;">Whitefield</font><br><br>
+                <font class="info" style="font-size: 15px; position: relative; top: -20px;">This 4 star resort in Goa is located in Whitefield. Full Address of property is <br>
+                Palm Meadows Club, Ramagondanahalli HAL Airport Varthur Road. This<br>
+                Resort have 4.2 out of 5 rating where 4.5/5 for cleanliness and 4.5/5 for<br>
+                loaction and 4.4/5 for hospitality. Top facilities of this  resorts are free parking,<br>
+                kids play area and outdoor sports.</font><br>
+                <font style="font-size: medium; position: relative; top: -210px; left: 790px; color: grey;"><del>&#8377;6,500</del></font><br>
+                <font style="font-size: x-large; position: relative; top: -210px; left: 770px; font-weight: bold;">&#8377;6,110</font><br>
+                <font style="font-size: small; position: relative; top: -210px; left: 784px; color: grey;">Per Night</font><br>
+                <button id="button" onclick="fbooking('Palm Meadows Resort',6110)" style="position: relative; left: 740px; top: -165px; background-color: skyblue; height: 30px; width: 100px; border-radius: 50px;">
+                <b>Book Now</b>
+                </button>
+            </span>
+        </p>
+
+        <p class="hotel">
+            <img src="../static/bangalore_hotel4.png" height="200px" width="200px" style="position: relative; top: 25px; left: 25px;">
+            <span class="gh1"><mark style="background-color: rgb(14, 97, 129); color: white;">&nbsp;4.0&nbsp;</mark>&emsp;&#11088;&#11088;&#11088;&#11088;<br>
+                <font class="heading" style="font-size: xx-large;"><b>The Continentti Whitefield</b><br></font>
+                <font class="landmark" style="color: grey; font-size: large;">Brookefield</font><br><br>
+                <font class="info" style="font-size: 15px; position: relative; top: -20px;">This 4 star hotel in Goa is located in Brookefield. Full Address of property is <br>
+                No 669, 1st main road, AECS layout C block, Kundalahalli, Whitefield,<br>
+                Bangalore - 560037. It's a 3 star Hotel with overall rating 4.0 out of 5<br>
+                where 4.4/5 for room and 4.4/5 for cleanliness and 4.2/5 for value for money. <br>
+                Top facilities of this hotel are lounge,free public parking and conference room.</font><br>
+                <font style="font-size: medium; position: relative; top: -210px; left: 790px; color: grey;"><del>&#8377;3,249</del></font><br>
+                <font style="font-size: x-large; position: relative; top: -210px; left: 770px; font-weight: bold;">&#8377;2,093</font><br>
+                <font style="font-size: small; position: relative; top: -210px; left: 784px; color: grey;">Per Night</font><br>
+                <button id="button" onclick="fbooking('The Continentti Whitefield',2093)" style="position: relative; left: 740px; top: -160px; background-color: skyblue; height: 30px; width: 100px; border-radius: 50px;">
+                <b>Book Now</b>
+                </button>
+            </span>
+        </p>
+        <br><br><br><br><br><br>
+        <div class="copyrights">
+            <span class="copy">
+                &copy; 2023 WANDERLUST PVT.LTD.<br>Country India
+            </span>
+            <span class="social-media">
+                <i class="fab fa-facebook"></i>&emsp;<i class="fab fa-instagram"></i>&emsp;<i class="fab fa-twitter"></i>
+            </span>            
+        </div>
+    </body>
+</html>

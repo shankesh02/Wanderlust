@@ -1,0 +1,205 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+            integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>
+            Manali Hotels 
+        </title>
+        <link rel="icon" type="image/x-icon" href="../static/Wanderlust.png">
+    </head>
+    <style>
+        html,body{
+            margin: 0;
+            height: 100%;
+        }
+        body{
+            background: linear-gradient(to bottom, skyblue, navy);
+            background-attachment: fixed ;
+        }
+        .logo{
+            position: relative;
+            padding-left: 40px;
+            top: 10px;
+        }
+        .icons{
+            position: relative;
+            margin-left: 30%;
+            border-radius: 50%;
+            top: -50px;
+        }
+        p.hotel{
+            height: 250px;
+            border-radius: 5px;
+            background-color: white;
+            position: relative;
+            left: 200px;
+            width: 70%;
+            font-size: larger;
+            top: -40px;
+        }
+        .gh1{
+            position: relative;
+            top: -157px;
+            left: 50px;
+        }
+        .heading{
+            position: relative;
+            display: flex;
+            left: 205px;
+        }
+        .landmark{
+            position: relative;
+            display: flex;
+            left: 205px;
+        }
+        .info{
+            position: relative;
+            display: flex;
+            left: 205px;
+        }
+        #button{
+            border: solid skyblue;
+        }
+        .copyrights{
+            background-color: black;
+            position: relative;
+            /* top: 200px; */
+            /* padding-left: 68%; */
+            font-size: larger;
+            color: white;
+            height: 100px;
+        }
+        .copy{
+            position: relative;
+            float: right;
+            color: white;   
+            right: 50px;
+            top: 25px; 
+        }
+        .social-media{
+            position: relative;
+            float: left;  
+            left: 50px;
+            top: 40px;
+        }
+    </style>
+    <script>
+        function fbooking(pl,p)
+        {
+            window.location.href = `/hbook/${pl}/${p}`;
+        }
+    </script>
+    <body>
+        <div class="logo">
+            <a href="{{url_for('home')}}" name="logo">
+                <img src="../static/Wanderlust.png" height="50px" width="80px">
+            </a>
+            
+        </div>
+        <div class="icons">
+            <a href="{{url_for('flights')}}" >
+                <img src="../static/flights.png" height="70px" width="70px">
+            </a>
+            <a href="{{ url_for('hotels')}}">
+                <img src="../static/Hotelc.png" height="70px" width="70px" style="position: relative; left: 30px;">
+            </a>
+            <a href="{{ url_for('holiday')}}">
+                <img src="../static/Holiday Packages.png" height="70px" width="100px" style="position: relative; left: 60px;">
+            </a>
+            <a href="{{ url_for('trains')}}">
+                <img src="../static/Trains.png" height="70px" width="70px" style="position: relative; left: 90px;">
+            </a>
+            <a href="{{ url_for('activity')}}">
+                <img src="../static/Activities.png" height="70px" width="70px" style="position: relative; left: 120px;">
+            </a>
+        </div>
+        
+        <img src="../static/manali.jpg" height="70px" width="70px" style="border-radius: 50%; position: relative; left:50px; top:50px;">
+        
+        <p class="hotel">
+            <img src="../static/manali_hotel1.png" height="200px" width="200px" style="position: relative; top: 25px; left: 25px;">
+            <span class="gh1"><mark style="background-color: rgb(14, 97, 129); color: white;">&nbsp;4.3&nbsp;</mark>&emsp;&#11088;&#11088;&#11088;&#11088;<br>
+                <font class="heading" style="font-size: xx-large;"><b>The Orchard Greens Resort and Spa</b><br></font>
+                <font class="landmark" style="color: grey; font-size: large;">Log Huts Area&nbsp;|&nbsp;580m from Hidimba Devi Temple</font><br><br>
+                <font class="info" style="font-size: 15px; position: relative; top: -20px;">This 4 star hotel in Manali is located in Log Huts Area. Full Address of property is <br>
+                Log Huts Area, Manali. This Resort have 4.3 out of 5 rating<br>
+                where 4.5/5 for location and 4.4/5 for cleanliness and 4.4/5 for hospitality.<br>
+                Key amenities of this property are free parking, free Wi-Fi and outdoor sports.</font><br>
+                <font style="font-size: medium; position: relative; top: -180px; left: 790px; color: grey;"><del>&#8377;4,599</del></font><br>
+                <font style="font-size: x-large; position: relative; top: -180px; left: 770px; font-weight: bold;">&#8377;2,221</font><br>
+                <font style="font-size: small; position: relative; top: -180px; left: 784px; color: grey;">Per Night</font><br>
+                <button id="button" onclick="fbooking('The Orchard Greens Resort and Spa',2221)" style="position: relative; left: 750px; top: -125px; background-color: skyblue; height: 30px; width: 100px; border-radius: 50px;">
+                <b>Book Now</b>
+                </button>
+            </span>
+        </p>
+
+        <p class="hotel">
+            <img src="../static/manali_hotel2.png" height="200px" width="200px" style="position: relative; top: 25px; left: 25px;">
+            <span class="gh1"><mark style="background-color: rgb(14, 97, 129); color: white;">&nbsp;4.3&nbsp;</mark>&emsp;&#11088;&#11088;&#11088;&#11088;<br>
+                <font class="heading" style="font-size: xx-large;"><b>Snow Valley Resorts & Spa</b><br></font>
+                <font class="landmark" style="color: grey; font-size: large;">Log Huts Area&nbsp;|&nbsp;600m from Hidimba Devi Temple</font><br><br>
+                <font class="info" style="font-size: 15px; position: relative; top: -20px;">This 4 star hotel in Manali is located in Log Huts Area. Full <br>
+                Address of property is Log Huts Area, Manali. This Resort have 4.3 out of 5 rating<br>
+                where 5.0/5 for security and 4.4/5 for child-friendliness and 4.4/5 for hospitality.<br>
+                Key amenities of this property are free parking, free Wi-Fi and kids play area.</font><br>
+                <font style="font-size: medium; position: relative; top: -180px; left: 790px; color: grey;"><del>&#8377;5,000</del></font><br>
+                <font style="font-size: x-large; position: relative; top: -180px; left: 770px; font-weight: bold;">&#8377;3,042</font><br>
+                <font style="font-size: small; position: relative; top: -180px; left: 784px; color: grey;">Per Night</font><br>
+                <button id="button" onclick="fbooking('Snow Valley Resorts & Spa',3042)" style="position: relative; left: 750px; top: -130px; background-color: skyblue; height: 30px; width: 100px; border-radius: 50px;">
+                <b>Book Now</b>
+                </button>
+            </span>
+        </p>
+
+        <p class="hotel">
+            <img src="../static/manali_hotel3.png" height="200px" width="200px" style="position: relative; top: 25px; left: 25px;">
+            <span class="gh1"><mark style="background-color: rgb(14, 97, 129); color: white;">&nbsp;4.4&nbsp;</mark>&emsp;&#11088;&#11088;&#11088;&#11088;&#11088;<br>
+                <font class="heading" style="font-size: xx-large;"><b>Echor Himalayan Heights Manali</b><br></font>
+                <font class="landmark" style="color: grey; font-size: large;">Prini</font><br><br>
+                <font class="info" style="font-size: 15px; position: relative; top: -20px;">This 5 star Cottage in Manali is located in Prini. Full Address of property is<br>
+                ADHPL Barrier, Hamta Road, Prini, Manali. This Cottage have 4.4 out of 5<br>
+                rating where 4.4/5 for room and 4.3/5 for cleanliness and 4.3/5 for security.<br>
+                Key amenities of this property are Tours and Treks and Cafe and Power Backup.</font><br>
+                <font style="font-size: medium; position: relative; top: -180px; left: 790px; color: grey;"><del>&#8377;8,600</del></font><br>
+                <font style="font-size: x-large; position: relative; top: -180px; left: 770px; font-weight: bold;">&#8377;5,911</font><br>
+                <font style="font-size: small; position: relative; top: -180px; left: 784px; color: grey;">Per Night</font><br>
+                <button id="button" onclick="fbooking('Echor Himalayan Heights Manali',5911)" style="position: relative; left: 750px; top: -135px; background-color: skyblue; height: 30px; width: 100px; border-radius: 50px;">
+                <b>Book Now</b>
+                </button>
+            </span>
+        </p>
+
+        <p class="hotel">
+            <img src="../static/manali_hotel4.png" height="200px" width="200px" style="position: relative; top: 25px; left: 25px;">
+            <span class="gh1"><mark style="background-color: rgb(14, 97, 129); color: white;">&nbsp;4.5&nbsp;</mark>&emsp;&#11088;&#11088;&#11088;&#11088;<br>
+                <font class="heading" style="font-size: xx-large;"><b>Larisa Resort</b><br></font>
+                <font class="landmark" style="color: grey; font-size: large;">Haripur&nbsp;|&nbsp;14.8 km from city centre</font><br><br>
+                <font class="info" style="font-size: 15px; position: relative; top: -20px;">This 5 star resort in Manali is located in Haripur. Full Address of property is <br>
+                Larisa Resort, Manali-Nagar Road, Haripur. This Hotel have 4.5 out of 5 <br>
+                rating where 4.7/5 for cleanliness and 4.6/5 for hospitality and 4.6/5 for room.<br>
+                Top facilities of this Resort are free parking, free Wi-Fi and outdoor sports.</font><br>
+                <font style="font-size: medium; position: relative; top: -180px; left: 790px; color: grey;"><del>&#8377;4,999</del></font><br>
+                <font style="font-size: x-large; position: relative; top: -180px; left: 770px; font-weight: bold;">&#8377;3,615</font><br>
+                <font style="font-size: small; position: relative; top: -180px; left: 784px; color: grey;">Per Night</font><br>
+                <button id="button" onclick="fbooking('Larisa Resort',3615)" style="position: relative; left: 750px; top: -130px; background-color: skyblue; height: 30px; width: 100px; border-radius: 50px;">
+                <b>Book Now</b>
+                </button>
+            </span>
+        </p>
+        <br><br><br><br><br>
+        <div class="copyrights">
+            <span class="copy">
+                &copy; 2023 WANDERLUST PVT.LTD.<br>Country India
+            </span>
+            <span class="social-media">
+                <i class="fab fa-facebook"></i>&emsp;<i class="fab fa-instagram"></i>&emsp;<i class="fab fa-twitter"></i>
+            </span>            
+        </div>
+    </body>
+</html>

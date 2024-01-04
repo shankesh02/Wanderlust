@@ -1,0 +1,218 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+            integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>
+            Concert Activities 
+        </title>
+        <link rel="icon" type="image/x-icon" href="../static/Wanderlust.png">
+        <style>
+            html,body{
+                margin: 0;
+                height: 100%;
+            }
+            body{
+                background: linear-gradient(to bottom, skyblue, navy);
+                background-attachment: fixed;
+            }
+            .logo{
+                position: relative;
+                padding-left: 40px;
+                top: 10px;
+            }
+            .icons{
+                position: relative;
+                margin-left: 30%;
+                border-radius: 50%;
+                top: -50px;
+            }
+            p.activity{
+                height: 250px;
+                border-radius: 5px;
+                background-color: white;
+                position: relative;
+                left: 200px;
+                width: 70%;
+                font-size: larger;
+                top: -40px;
+            }
+            .gh1{
+                position: relative;
+                top: -157px;
+                left: 50px;
+            }
+            .heading{
+                position: relative;
+                display: flex;
+                left: 205px;
+                top: -27px;
+            }
+            .time{
+                position: relative;
+                display: flex;
+                left: 250px;
+                top: -38px;
+            }
+            .info{
+                
+                position: relative;
+                display: flex;
+                left: 205px;
+                top: -60px;
+            }
+            #button{
+                border: solid skyblue;
+            }
+            .copyrights{
+                background-color: black;
+                position: relative;
+                font-size: larger;
+                color: white;
+                height: 100px;
+            }
+            .copy{
+                position: relative;
+                float: right;
+                color: white;   
+                right: 50px;
+                top: 25px; 
+            }
+            .social-media{
+                position: relative;
+                float: left;  
+                left: 50px;
+                top: 40px;
+            }
+            
+        </style>
+    </head>
+    <script>
+        function fbooking(a,h,p)
+        {
+            window.location.href = `/abook/${a}/${h}/${p}`;
+        }
+    </script>
+    <body>
+        <div class="logo">
+            <a href="{{url_for('home')}}" name="logo">
+                <img src="../static/Wanderlust.png" height="50px" width="80px">
+            </a>
+            
+        </div>
+        <div class="icons">
+            <a href="{{url_for('flights')}}" >
+                <img src="../static/flights.png" height="70px" width="70px">
+            </a>
+            <a href="{{ url_for('hotels')}}">
+                <img src="../static/hotels.png" height="70px" width="70px" style="position: relative; left: 30px;">
+            </a>
+            <a href="{{ url_for('holiday')}}">
+                <img src="../static/Holiday Packages.png" height="70px" width="100px" style="position: relative; left: 60px;">
+            </a>
+            <a href="{{ url_for('trains')}}">
+                <img src="../static/Trains.png" height="70px" width="70px" style="position: relative; left: 90px;">
+            </a>
+            <a href="{{ url_for('activity')}}">
+                <img src="../static/Activityc.png" height="70px" width="70px" style="position: relative; left: 120px;">
+            </a>
+        </div>
+
+        <img src="../static/concert_activities.png" height="70px" width="70px" style="border-radius: 20%; position: relative; left:50px; top:50px;">
+        
+        <p class="activity">
+            <img src="../static/concert_activity1.png" height="200px" width="200px" style="position: relative; top: 25px; left: 25px;">
+            <span class="gh1">
+                <font class="heading" style="font-size: xx-large;"><b>Disneyland - Skip the line</b><br></font>
+                <mark style="background-color: rgb(14, 97, 129); color: white; position: relative; left: 210px; top: -10px;">&nbsp;4.7&nbsp;</mark>   
+                <font class="time" style="font-size: 20px;">&nbsp;|&nbsp; &#128344; 5 Hours</font><br><br>
+                <font class="info" style="font-size: 15px;">The Magic Kingdom just got a whole lot more magical! See those lines to get<br>
+                    in? This ticket is the sprinkle of fairy dust that'll make them disappear, getting you <br>
+                    straight into the action. Meet your heroes, soak up the enchanting atmosphere, and<br>
+                    feel attractions spread across Disneyland® Paris and Walt Disney Studios®, the 2 <br>
+                    Parks ticket option lets you fully enjoy both Disney universes in one go!</font><br>
+                <font style="font-size: x-large; position: relative; top: -210px; left: 770px; font-weight: bold;">&#8377;5,584</font><br>
+                <font style="font-size: small; position: relative; top: -210px; left: 778px; color: grey;">Per Person</font><br>
+                <button id="button" onclick="fbooking('Disneyland - Skip the line',5,5584)" style="position: relative; left: 750px; top: -160px; background-color: skyblue; height: 30px; width: 100px; border-radius: 50px;">
+                <b>Book Now</b>
+                </button>
+            </span>
+        </p>
+
+        <p class="activity">
+            <img src="../static/concert_activity2.png" height="200px" width="200px" style="position: relative; top: 25px; left: 25px;">
+            <span class="gh1">
+                <font class="heading" style="font-size: xx-large;"><b>Changi Experience Video</b><br></font>
+                <mark style="background-color: rgb(14, 97, 129); color: white; position: relative; left: 210px; top: -10px;">&nbsp;4.2&nbsp;</mark>   
+                <font class="time" style="font-size: 20px;">&nbsp;|&nbsp; &#128344; 3 Hours</font><br><br>
+                <font class="info" style="font-size: 15px;">Think airports are all about queuing, rushing, and stress? Let Singapore change <br>
+                    your mind! Discover the story of the world's best airport, and sneak a peek behind <br>
+                    the scenes of this busy international hub with a ticket for Changi Experience Studio.<br>
+                    Located in the Jewel shopping complex, this futuristic multimedia attraction spans<br>
+                    3,000 square feet of high-tech video games, interactive touch-points, spectacular <br>
+                    visual exhibits to immerse you in every aspect of the airport. </font><br>
+                    <font style="font-size: medium; position: relative; top: -240px; left: 799px; color: grey;"><del>&#8377;2,694</del></font><br>
+                <font style="font-size: x-large; position: relative; top: -239px; left: 778px; font-weight: bold;">&#8377;1,799</font><br>
+                <font style="font-size: small; position: relative; top: -238px; left: 787px; color: grey;">Per Person</font><br>
+                <button id="button" onclick="fbooking('Changi Experience Video',3,1799)" style="position: relative; left: 757px; top: -192px; background-color: skyblue; height: 30px; width: 100px; border-radius: 50px;">
+                <b>Book Now</b>
+                </button>
+            </span>
+        </p>
+
+        <p class="activity">
+            <img src="../static/concert_activity3.png" height="200px" width="200px" style="position: relative; top: 25px; left: 25px;">
+            <span class="gh1">
+                <font class="heading" style="font-size: xx-large;"><b>Marina Bay Night Bike Tour</b><br></font>
+                <mark style="background-color: rgb(14, 97, 129); color: white; position: relative; left: 210px; top: -10px;">&nbsp;4.3&nbsp;</mark>   
+                <font class="time" style="font-size: 20px;">&nbsp;|&nbsp; &#128344; 3 Hours</font><br><br>
+                <font class="info" style="font-size: 15px;">There are places in the world as magical or atmospheric as Singapore Marina Bay<br>
+                    With the ethereal spectacle of the Supertree Grove scattering shards of colored light <br>
+                    across the water, and the iconic Marina Bay Sands resort aglow, it's a breathtaking<br>
+                    spectacle.Drink it all in with an invigorating bike tour around the bay,and learn <br>
+                    about the city's incredible rise from a small port to an international hub, from a <br>
+                    friendly English-speaking guide.Tour is subject to change depending on events.</font><br>
+                    <font style="font-size: medium; position: relative; top: -250px; left: 790px; color: grey;"><del>&#8377;4,000</del></font><br>
+                <font style="font-size: x-large; position: relative; top: -249px; left: 770px; font-weight: bold;">&#8377;3,230</font><br>
+                <font style="font-size: small; position: relative; top: -249px; left: 778px; color: grey;">Per Person</font><br>
+                <button id="button" onclick="fbooking('Marina Bay Night Bike Tour',3,3230)" style="position: relative; left: 757px; top: -192px; background-color: skyblue; height: 30px; width: 100px; border-radius: 50px;">
+                <b>Book Now</b>
+                </button>
+            </span>
+        </p>
+
+        <p class="activity">
+            <img src="../static/concert_activity4.png" height="200px" width="200px" style="position: relative; top: 25px; left: 25px;">
+            <span class="gh1">
+                <font class="heading" style="font-size: xx-large;"><b>Vespa Night tour of Singapore</b><br></font>
+                <mark style="background-color: rgb(14, 97, 129); color: white; position: relative; left: 210px; top: -10px;">&nbsp;4.4&nbsp;</mark>   
+                <font class="time" style="font-size: 20px;;">&nbsp;|&nbsp; &#128344; 4 Hours</font><br><br>
+                <font class="info" style="font-size: 15px;">Want to see Singapore in a different light? Join a convoy of revving Vespas and<br>
+                    venture into the warm Asian night to get a real feel for the Lion City.You'll ride<br>
+                    over to some of the city-state's important heritage areas, like the Muslim Quarter <br>
+                    of Kampong Glam, Little India, Chinatown. See the lit-up Singapore skyline from<br>
+                    your sidecar vantage point, including the famous board like Marina Bay Sands <br>
+                    building, and let your guide provide insights into this pioneering green city.</font><br>
+                    <font style="font-size: medium; position: relative; top: -255px; left: 784px; color: grey;"><del>&#8377;10,459</del></font><br>
+                <font style="font-size: x-large; position: relative; top: -250px; left: 770px; font-weight: bold;">&#8377;9,280</font><br>
+                <font style="font-size: small; position: relative; top: -250px; left: 778px; color: grey;">Per Person</font><br>
+                <button id="button" onclick="fbooking('Vespa Night tour of Singapore',4,9280)" style="position: relative; left: 757px; top: -192px; background-color: skyblue; height: 30px; width: 100px; border-radius: 50px;">
+                <b>Book Now</b>
+                </button>
+            </span>
+        </p>
+        <br><br><br><br><br><br><br><br>
+        <div class="copyrights">
+            <span class="copy">
+                &copy; 2023 WANDERLUST PVT.LTD.<br>Country India
+            </span>
+            <span class="social-media">
+                <i class="fab fa-facebook"></i>&emsp;<i class="fab fa-instagram"></i>&emsp;<i class="fab fa-twitter"></i>
+            </span>            
+        </div>
+    </body>
+</html>

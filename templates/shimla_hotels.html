@@ -1,0 +1,205 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+            integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>
+            Shimla Hotels 
+        </title>
+        <link rel="icon" type="image/x-icon" href="../static/Wanderlust.png">
+    </head>
+    <style>
+        html,body{
+            margin: 0;
+            height: 100%;
+        }
+        body{
+            background: linear-gradient(to bottom, skyblue, navy);
+            background-attachment: fixed ;
+        }
+        .logo{
+            position: relative;
+            padding-left: 40px;
+            top: 10px;
+        }
+        .icons{
+            position: relative;
+            margin-left: 30%;
+            border-radius: 50%;
+            top: -50px;
+        }
+        p.hotel{
+            height: 250px;
+            border-radius: 5px;
+            background-color: white;
+            position: relative;
+            left: 200px;
+            width: 70%;
+            font-size: larger;
+            top: -40px;
+        }
+        .gh1{
+            position: relative;
+            top: -157px;
+            left: 50px;
+        }
+        .heading{
+            position: relative;
+            display: flex;
+            left: 205px;
+        }
+        .landmark{
+            position: relative;
+            display: flex;
+            left: 205px;
+        }
+        .info{
+            position: relative;
+            display: flex;
+            left: 205px;
+        }
+        #button{
+            border: solid skyblue;
+        }
+        .copyrights{
+            background-color: black;
+            position: relative;
+            /* top: 200px; */
+            /* padding-left: 68%; */
+            font-size: larger;
+            color: white;
+            height: 100px;
+        }
+        .copy{
+            position: relative;
+            float: right;
+            color: white;   
+            right: 50px;
+            top: 25px; 
+        }
+        .social-media{
+            position: relative;
+            float: left;  
+            left: 50px;
+            top: 40px;
+        }
+    </style>
+    <script>
+        function fbooking(pl,p)
+        {
+            window.location.href = `/hbook/${pl}/${p}`;
+        }
+    </script>
+    <body>
+        <div class="logo">
+            <a href="{{url_for('home')}}" name="logo">
+                <img src="../static/Wanderlust.png" height="50px" width="80px">
+            </a>
+            
+        </div>
+        <div class="icons">
+            <a href="{{url_for('flights')}}" >
+                <img src="../static/flights.png" height="70px" width="70px">
+            </a>
+            <a href="{{ url_for('hotels')}}">
+                <img src="../static/Hotelc.png" height="70px" width="70px" style="position: relative; left: 30px;">
+            </a>
+            <a href="{{ url_for('holiday')}}">
+                <img src="../static/Holiday Packages.png" height="70px" width="100px" style="position: relative; left: 60px;">
+            </a>
+            <a href="{{ url_for('trains')}}">
+                <img src="../static/Trains.png" height="70px" width="70px" style="position: relative; left: 90px;">
+            </a>
+            <a href="{{ url_for('activity')}}">
+                <img src="../static/Activities.png" height="70px" width="70px" style="position: relative; left: 120px;">
+            </a>
+        </div>
+
+        <img src="../static/shimla.jpg" height="70px" width="70px" style="border-radius: 50%; position: relative; left:50px; top:50px;">
+        
+        <p class="hotel">
+            <img src="../static/shimla_hotel1.png" height="200px" width="200px" style="position: relative; top: 25px; left: 25px;">
+            <span class="gh1"><mark style="background-color: rgb(14, 97, 129); color: white;">&nbsp;4.1&nbsp;</mark>&emsp;&#11088;&#11088;&#11088;&#11088;<br>
+                <font class="heading" style="font-size: xx-large;"><b>Marigold Sarovar Portico</b><br></font>
+                <font class="landmark" style="color: grey; font-size: large;">Mashobra&nbsp;|&nbsp;20km from shimla city centre</font><br><br>
+                <font class="info" style="font-size: 15px; position: relative; top: -20px;">This 4 star Resort in Mashobra is located in Mashobra. Full address of property is<br>
+                village Sadhora, Mashobra-Naldera Road, P.O.Baldian, District Shimla. This Hotel have <br>
+                4.1 out of 5 rating where 5.0/5 for security and 4.4/5 for room and 4.3/5 for cleanliness.<br>
+                Key amenities of this property are EV Charging Station & Free Parking & kids play area.</font><br>
+                <font style="font-size: medium; position: relative; top: -180px; left: 790px; color: grey;"><del>&#8377;5,999</del></font><br>
+                <font style="font-size: x-large; position: relative; top: -180px; left: 770px; font-weight: bold;">&#8377;3,601</font><br>
+                <font style="font-size: small; position: relative; top: -180px; left: 784px; color: grey;">Per Night</font><br>
+                <button id="button" onclick="fbooking('Marigold Sarovar Portico',3601)" style="position: relative; left: 750px; top: -140px; background-color: skyblue; height: 30px; width: 100px; border-radius: 50px;">
+                <b>Book Now</b>
+                </button>
+            </span>
+        </p>
+
+        <p class="hotel">
+            <img src="../static/shimla_hotel2.png" height="200px" width="200px" style="position: relative; top: 25px; left: 25px;">
+            <span class="gh1"><mark style="background-color: rgb(14, 97, 129); color: white;">&nbsp;4.1&nbsp;</mark>&emsp;&#11088;&#11088;&#11088;<br>
+                <font class="heading" style="font-size: xx-large;"><b>Hotel Willow Banks</b><br></font>
+                <font class="landmark" style="color: grey; font-size: large;">Mall road&nbsp;|&nbsp;830m from Jhakoo Temple.</font><br><br>
+                <font class="info" style="font-size: 15px; position: relative; top: -20px;">Location of the Hotel is Mall Road.It is a 4 star hotel with overall<br>
+                rating 4.1 out of 5 where 5.0/5 for security & 4.6/5 for location and 4.2/5<br>
+                for cleanliness. Top facilities of this Hotel are Yoga & Tours and Treks <br>
+                indoor games, free parking and free Wi-Fi.</font><br>
+                <font style="font-size: medium; position: relative; top: -180px; left: 790px; color: grey;"><del>&#8377;9,910</del></font><br>
+                <font style="font-size: x-large; position: relative; top: -180px; left: 770px; font-weight: bold;">&#8377;5,869</font><br>
+                <font style="font-size: small; position: relative; top: -180px; left: 784px; color: grey;">Per Night</font><br>
+                <button id="button" onclick="fbooking('Hotel Willow Banks',5869)" style="position: relative; left: 750px; top: -140px; background-color: skyblue; height: 30px; width: 100px; border-radius: 50px;">
+                <b>Book Now</b>
+                </button>
+            </span>
+        </p>
+
+        <p class="hotel">
+            <img src="../static/shimla_hotel3.png" height="200px" width="200px" style="position: relative; top: 25px; left: 25px;">
+            <span class="gh1"><mark style="background-color: rgb(14, 97, 129); color: white;">&nbsp;4.2&nbsp;</mark>&emsp;&#11088;&#11088;&#11088;&#11088;<br>
+                <font class="heading" style="font-size: xx-large;"><b>Woodays Resort</b><br></font>
+                <font class="landmark" style="color: grey; font-size: large;">Kufri&nbsp;|&nbsp;2.0 km from Kufri city centre</font><br><br>
+                <font class="info" style="font-size: 15px; position: relative; top: -20px;">This 4 star resort is located in Kufri. Full Address of property is Lambidhar,Kufri <br>
+                on link road between Fagu-Kufri adjoining NH-22 road in Tehsil Theog.This Resort<br>
+                have 4.2 out of 5 rating where 4.9/5 for location and 4.6/5 for hospitality & 4.2/5 <br>
+                for cleanliness.Key amenities of this property are kids play area and lawn.</font><br>
+                <font style="font-size: medium; position: relative; top: -180px; left: 790px; color: grey;"><del>&#8377;9,750</del></font><br>
+                <font style="font-size: x-large; position: relative; top: -180px; left: 770px; font-weight: bold;">&#8377;7,499</font><br>
+                <font style="font-size: small; position: relative; top: -180px; left: 784px; color: grey;">Per Night</font><br>
+                <button id="button" onclick="fbooking('Woodays Resort',7499)" style="position: relative; left: 750px; top: -135px; background-color: skyblue; height: 30px; width: 100px; border-radius: 50px;">
+                <b>Book Now</b>
+                </button>
+            </span>
+        </p>
+
+        <p class="hotel">
+            <img src="../static/shimla_hotel4.png" height="200px" width="200px" style="position: relative; top: 25px; left: 25px;">
+            <span class="gh1"><mark style="background-color: rgb(14, 97, 129); color: white;">&nbsp;4.4&nbsp;</mark>&emsp;&#11088;&#11088;&#11088;&#11088;<br>
+                <font class="heading" style="font-size: xx-large;"><b>Regenta Resort & Spa</b><br></font>
+                <font class="landmark" style="color: grey; font-size: large;">Mashobra&nbsp;|&nbsp;17.0 km from Shimla city center</font><br><br>
+                <font class="info" style="font-size: 15px; position: relative; top: -20px;">This 4 star hotel is located in Mashobra. Full Address of property is <br>
+                Circular Road, Purani Koti, Near Mahasu House. This Hotel have 4.4 out of 5 <br>
+                rating where 5.0/5 for location and 4.6/5 for hospitality and 3.7/5 for Amenities.<br>
+                Top facilities of this hotel are Lounge & Kids play area.</font><br>
+                <font style="font-size: medium; position: relative; top: -180px; left: 785px; color: grey;"><del>&#8377;12,000</del></font><br>
+                <font style="font-size: x-large; position: relative; top: -180px; left: 770px; font-weight: bold;">&#8377;8,640</font><br>
+                <font style="font-size: small; position: relative; top: -180px; left: 784px; color: grey;">Per Night</font><br>
+                <button id="button" onclick="fbooking('Regenta Resort & Spa',8640)" style="position: relative; left: 750px; top: -130px; background-color: skyblue; height: 30px; width: 100px; border-radius: 50px;">
+                <b>Book Now</b>
+                </button>
+            </span>
+        </p>
+        <br><br><br><br><br>
+        <div class="copyrights">
+            <span class="copy">
+                &copy; 2023 WANDERLUST PVT.LTD.<br>Country India
+            </span>
+            <span class="social-media">
+                <i class="fab fa-facebook"></i>&emsp;<i class="fab fa-instagram"></i>&emsp;<i class="fab fa-twitter"></i>
+            </span>            
+        </div>
+    </body>
+</html>

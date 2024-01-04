@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+            integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>
+            Jaipur Trains
+        </title>
+        <link rel="icon" type="image/x-icon" href="../static/Wanderlust.png">
+        <style>
+            html,body{
+            margin: 0;
+            height: 100%;
+            }
+            body{
+                background: linear-gradient(to bottom, skyblue, navy);
+                background-attachment: fixed;
+            }
+            .logo{
+                position: relative;
+                padding-left: 40px;
+                top: 10px;
+            }
+            .icons{
+                position: relative;
+                margin-left: 30%;
+                border-radius: 50%;
+                top: -50px;
+            }
+            p.train{
+                height: 100px;
+                border-radius: 5px;
+                background-color: white;
+                position: relative;
+                left: 200px;
+                width: 70%;
+                font-size: larger;
+                top: -40px;
+            }
+            #button{
+                border: solid skyblue;
+            }
+            .copyrights{
+            background-color: black;
+            position: relative;
+            font-size: larger;
+            color: white;
+            height: 100px;
+            }
+            .copy{
+                position: relative;
+                float: right;
+                color: white;   
+                right: 50px;
+                top: 25px; 
+            }
+            .social-media{
+                position: relative;
+                float: left;  
+                left: 50px;
+                top: 40px;
+            }
+        </style>
+    </head>
+    <script>
+        function fbooking(f,t,p,h)
+        {
+            window.location.href = `/tbook/${f}/${t}/${p}/${h}`;
+        }
+    </script>
+    <body>
+        <div class="logo">
+            <a href="{{url_for('home')}}" name="logo">
+                <img src="../static/Wanderlust.png" height="50px" width="80px">
+            </a>
+            
+        </div>
+        <div class="icons">
+            <a href="{{url_for('flights')}}" >
+                <img src="../static/flights.png" height="70px" width="70px">
+            </a>
+            <a href="{{ url_for('hotels')}}">
+                <img src="../static/hotels.png" height="70px" width="70px" style="position: relative; left: 30px;">
+            </a>
+            <a href="{{ url_for('holiday')}}">
+                <img src="../static/Holiday Packages.png" height="70px" width="100px" style="position: relative; left: 60px;">
+            </a>
+            <a href="{{ url_for('trains')}}">
+                <img src="../static/Trainc.png" height="70px" width="70px" style="position: relative; left: 90px;">
+            </a>
+            <a href="{{ url_for('activity')}}">
+                <img src="../static/Activities.png" height="70px" width="70px" style="position: relative; left: 120px;">
+            </a>
+        </div>
+        <img src="../static/jaipur.jpg" height="70px" width="70px" style="border-radius: 50%; position: relative; left:50px; top:50px;">
+    
+        <p class="train">
+            <img src="../static/irctc.png" height="50px" width="50px" style="position: relative; top: 25px; left: 25px;">
+            <b>&emsp;&emsp;&emsp;&emsp;10:40</b>&emsp;&emsp;&emsp;&emsp;&emsp;15h 55m&emsp;&emsp;&emsp;&emsp;&emsp;<b>01:35</b>
+            &emsp;&emsp;&emsp;&emsp;&emsp;<b>&#8377;1,567</b><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp; 
+            Jaipur &emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;Non-Stop&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;Mumbai
+            <button id="button" onclick="fbooking('Jaipur','Mumbai',1567,'15h 55m')" style="position: relative; left: 225px; top: -20px; background-color: skyblue; height: 30px; width: 100px; border-radius: 50px;">
+            <b>Book Now</b>
+            </button>
+        </p>
+
+        <p class="train">
+            <img src="../static/irctc.png" height="50px" width="50px" style="position: relative; top: 25px; left: 25px;">
+            <b>&emsp;&emsp;&emsp;&emsp;20:30</b>&emsp;&emsp;&emsp;&emsp;&emsp;08h 20m&emsp;&emsp;&emsp;&emsp;&emsp;<b>04:50</b>
+            &emsp;&emsp;&emsp;&emsp;&emsp;<b>&#8377;1,000 </b><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;
+            Jaipur &emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;Non-Stop&emsp;&emsp;&emsp;&emsp;&emsp;Delhi
+            <button id="button" onclick="fbooking('Jaipur','Delhi',1000,'08h 20m')" style="position: relative; left: 235px; top: -20px; background-color: skyblue; height: 30px; width: 100px; border-radius: 50px;">
+                <b>Book Now</b>
+            </button>
+        </p>
+
+        <p class="train">
+            <img src="../static/irctc.png" height="50px" width="50px" style="position: relative; top: 25px; left: 25px;">
+            <b>&emsp;&emsp;&emsp;&emsp;14:45</b>&emsp;&emsp;&emsp;&emsp;&emsp;21h 50m&emsp;&emsp;&emsp;&emsp;&emsp;<b>11:15</b>
+            &emsp;&emsp;&emsp;&emsp;&emsp;<b>&#8377;2,317</b><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;
+            Jaipur &emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;Non-Stop&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;Pune
+            <button id="button" onclick="fbooking('Jaipur','Pune',2317,'21h 50m')" style="position: relative; left: 235px; top: -20px; background-color: skyblue; height: 30px; width: 100px; border-radius: 50px;">
+                <b>Book Now</b>
+            </button>
+        </p>
+
+        <p class="train">
+            <img src="../static/irctc.png" height="50px" width="50px" style="position: relative; top: 25px; left: 25px;">
+            <b>&emsp;&emsp;&emsp;&emsp;07:55</b>&emsp;&emsp;&emsp;&emsp;&emsp;35h 50m&emsp;&emsp;&emsp;&emsp;&emsp;<b>18:45</b>
+            &emsp;&emsp;&emsp;&emsp;&emsp;<b>&#8377;3,600 </b><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp; 
+            Jaipur &emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;Non-Stop&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;Bangalore
+            <button id="button" onclick="fbooking('Jaipur','Bangalore',3600,'35h 50m')" style="position: relative; left: 210px; top: -20px; background-color: skyblue; height: 30px; width: 100px; border-radius: 50px;">
+                <b>Book Now</b>
+            </button>
+        </p>
+
+        <div class="copyrights">
+            <span class="copy">
+                &copy; 2023 WANDERLUST PVT.LTD.<br>Country India
+            </span>
+            <span class="social-media">
+                <i class="fab fa-facebook"></i>&emsp;<i class="fab fa-instagram"></i>&emsp;<i class="fab fa-twitter"></i>
+            </span>            
+        </div>
+    </body>
+</html>

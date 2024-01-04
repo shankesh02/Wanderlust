@@ -1,0 +1,169 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>
+            Complete your booking
+        </title>
+        <link rel="icon" type="image/x-icon" href="../static/Wanderlust.png">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+            integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+    <style>
+        .gradient-box {
+            width: 720px; 
+            height: 600px; 
+            margin: 0 auto; 
+            background: linear-gradient(to bottom, skyblue, navy);
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 5);
+            position: relative;
+            top: 75px;
+        }
+        h2{
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: black;
+            size: 20px;
+            text-align: center;
+            position: absolute;
+            top: 5%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 30px;
+        }
+        .booking{
+            position: relative;
+            top: 120px;
+            left: 50px;
+            transform: translateX(-50%);
+            color: whitesmoke;
+            text-align: justify;
+            font-size: small;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .select-class
+        {
+            position: relative;
+            top: 120px;
+            left: 70px;
+            transform: translateX(-50%);
+            color: whitesmoke;
+            text-align: justify;
+            font-size: small;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        #para1{
+            position: relative;
+            top: -20px;
+            left: 5px;
+            font-size: 30px;
+        }
+        #para2{
+            position: relative;
+            top: -30px;
+            color: black;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        #para3{
+            color: black;
+            font-size: 20px;
+            font-weight: bolder;
+            font-family: 'Times New Roman', Times, serif;
+            position: relative;
+            left: 270px;
+            bottom: 0px;
+        }
+        #button1{
+            position: relative;
+            top: 260px;
+            left: 80px;
+        }
+        #button1:hover{
+            transform: scale(1.5);
+            background-color: whitesmoke !important;
+            color: black;
+        }
+        ::placeholder{
+            color: black;
+        }
+    </style>
+        <script>
+            var nop,cls,tot,dat;
+            
+            function hotelbooking() 
+            {
+                var n = document.getElementById("num-nights").value;
+                var selectclass = document.getElementById("select-class");
+                var selectdate = document.getElementById("choose-date");
+                var roomprice;
+                var c=selectclass.value;
+                var d=selectdate.value;
+                arg2=Number('{{p}}');
+                if(c=="Queen Room")
+                {
+                    roomprice = arg2;
+                    
+                }
+                else if(c=="King Room")
+                {
+                    roomprice = arg2+(arg2*0.25);
+                }
+                else if(c=="Dorm Room")
+                {
+                    roomprice = arg2+(arg2*0.5);
+                }
+
+                const total = (n*roomprice).toFixed(2);
+                tot = total
+                nop=n
+                dat=d
+                cls=c
+
+                document.getElementById("para2").innerHTML = "<i class='fas fa-hotel'></i>&nbsp;"+n+" Nights<br><i class='fas fa-hotel'></i>&nbsp;"+c+"<br><i class='fas fa-hotel'></i>&nbsp;"+d;
+                
+                
+                document.getElementById("para1").innerHTML = '{{pl}}';
+                document.getElementById("para3").innerHTML = "&#8377;  "+total+" /-";
+                document.getElementById("button1").innerHtml;
+            }
+
+            function confirm()
+            {
+                p='{{p}}'
+                pl='{{pl}}'
+                window.location.href = `/hpayment/${pl}/${p}/${nop}/${cls}/${dat}/${tot}`;
+            }
+          </script>
+    
+    <body>
+        <div class="gradient-box">
+            <h2>Hotel Booking</h2>
+            <span class="booking">
+                <input type="number" placeholder="Number of nigths" id="num-nights" min="1" max="10" required style="background-color: skyblue; height: 20px; width: 130px; border:skyblue solid; border-radius: 5px;">
+                <select id="select-class" required style="background-color: skyblue; height: 28px; width: 130px; border: skyblue solid; border-radius: 5px; position: relative; top: 0px; left: 100px;">
+                    <option value="" Select Class>Select Room</option>
+                    <option value="King Room">King Bedroom</option>
+                    <option value="Queen Room">Queen Bedroom</option>
+                    <option value="Dorm Room">Dorm</option>
+                </select><br>
+                <input type="date" required placeholder="Choose date" id="choose-date" style="position:relative; top:-27px; left:460px; background-color: skyblue; height:20px; width: 130px; border: skyblue solid; border-radius: 5px; "><br><br><br><br><br><br>
+                <button id="button" onclick="hotelbooking()" style="background-color: skyblue; height: 35px; width: 150px; border: solid skyblue; border-radius: 5px; position: relative; top:-40px; left: 230px;">View Details</button>
+                <button id="button1" onclick="confirm()" style="background-color: skyblue; height: 35px; width: 150px; border: solid skyblue; border-radius: 5px;">Confirm Booking</button>          
+                <p id="para1" style="color:black"></p>
+                <p id="para2"></p>
+                <p id="para3"></p>
+                <p id="para4"></p>
+                <p id="para5"></p>
+                </span>
+        </div>
+
+    </body>
+    <script>
+        var today = new Date().toISOString().split('T')[0];
+        document.getElementById("choose-date").setAttribute("min", today);
+    </script>
+</html>

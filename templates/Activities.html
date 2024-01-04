@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+            integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>
+            Activities 
+        </title>
+        <link rel="icon" type="image/x-icon" href="../static/Wanderlust.png">
+        <style>
+            html,body{
+                margin: 0;
+                height: 100%;
+            }
+            body{
+                background: linear-gradient(to bottom, skyblue, navy);
+                background-attachment: fixed;
+            }
+            .logo{
+                position: relative;
+                padding-left: 40px;
+                top: 10px;
+            }
+            .icons{
+                position: relative;
+                margin-left: 30%;
+                border-radius: 50%;
+                top: -50px;
+            }
+            .activities{
+                position: relative;
+                top: 70px;
+                left: 150px;
+            }
+            .activitiesnames{
+                font-weight: bolder;
+                font-size: larger;
+                position: relative;
+                bottom: 130px;
+                left: 240px;
+            }
+            .copyrights{
+                background-color: black;
+                position: relative;
+                font-size: larger;
+                color: white;
+                height: 100px;
+            }
+            .copy{
+                position: relative;
+                float: right;
+                color: white;   
+                right: 50px;
+                top: 25px; 
+            }
+            .social-media{
+                position: relative;
+                float: left;  
+                left: 50px;
+                top: 40px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="logo">
+            <a href="{{url_for('home')}}" name="logo">
+                <img src="../static/Wanderlust.png" height="50px" width="80px">
+            </a>
+            
+        </div>
+        <div class="icons">
+            <a href="{{url_for('flights')}}" >
+                <img src="../static/flights.png" height="70px" width="70px">
+            </a>
+            <a href="{{ url_for('hotels')}}">
+                <img src="../static/hotels.png" height="70px" width="70px" style="position: relative; left: 30px;">
+            </a>
+            <a href="{{ url_for('holiday')}}">
+                <img src="../static/Holiday Packages.png" height="70px" width="100px" style="position: relative; left: 60px;">
+            </a>
+            <a href="{{ url_for('trains')}}">
+                <img src="../static/Trains.png" height="70px" width="70px" style="position: relative; left: 90px;">
+            </a>
+            <a href="{{ url_for('activity')}}">
+                <img src="../static/Activityc.png" height="70px" width="70px" style="position: relative; left: 120px;">
+            </a>
+        </div>
+
+        <div class="activities">
+            <a href="{{ url_for('adventure_activity') }}" style="text-decoration: none; color: black;">
+                <img src="../static/adventure_activities.png" height="70px" width="70px" style="border-radius: 20%;">
+            </a>
+            <a href="{{ url_for('monument_activity') }}">
+                <img src="../static/monument_activities.png" height="70px" width="70px" style="border-radius: 20%; position: relative; left:200px">
+            </a>
+            <a href="{{ url_for('cruise_activity') }}">
+                <img src="../static/cruise_activities.png" height="70px" width="70px" style="border-radius: 20%; position: relative; left:400px">
+            </a>
+            <a href="{{ url_for('water_activity') }}">
+                <img src="../static/water_activities.png" height="70px" width="70px" style="border-radius: 20%; position: relative; left:600px">
+            </a><br><br><br><br><br>
+            <a href="{{ url_for('shopping_activity') }}">
+                <img src="../static/shopping_activities.png" height="70px" width="70px" style="border-radius: 20%; ">
+            </a>
+            <a href="{{ url_for('concert_activity') }}">
+                <img src="../static/concert_activities.png" height="70px" width="70px" style="border-radius: 20%;  position: relative; left:200px">
+            </a>
+            <a href="{{ url_for('park_activity') }}">
+                <img src="../static/park_activities.png" height="70px" width="70px" style="border-radius: 20%; position: relative; left:400px">
+            </a>
+            <a href="{{ url_for('air_activity') }}">
+                <img src="../static/air_activities.png" height="70px" width="70px" style="border-radius: 20%;  position: relative; left:600px">
+            </a>
+        </div>
+        <div class="activitiesnames">
+            <a href="{{ url_for('adventure_activity') }}" style="color: black; text-decoration: none; ">ADVENTURE</a>
+            <a href="{{ url_for('monument_activity') }}" style="color: black; text-decoration: none; position: relative; left:150px">MONUMENTS</a>
+            <a href="{{ url_for('cruise_activity') }}" style="color: black; text-decoration: none; position: relative; left:290px">CRUISE</a>
+            <a href="{{ url_for('water_activity') }}" style="color: black; text-decoration: none; position: relative; left: 485px;">WATER SPORTS</a><br><br><br><br><br><br>
+            <a href="{{ url_for('shopping_activity') }}" style="color: black; text-decoration: none; position: relative; left: 4px; top: 15px;">SHOPPING</a>
+            <a href="{{ url_for('concert_activity') }}" style="color: black; text-decoration: none; position: relative; left: 170px; top: 15px;">CONCERTS</a>
+            <a href="{{ url_for('park_activity') }}" style="color: black; text-decoration: none; position: relative; left: 335px; top: 15px;">THEME PARKS</a>
+            <a href="{{ url_for('air_activity') }}" style="color: black; text-decoration: none; position: relative; left: 465px; top: 15px;">AIR ADVENTURE</a>
+            
+        </div>
+        <br><br><br><br><br><br><br><br>
+        <div class="copyrights">
+            <span class="copy">
+                &copy; 2023 WANDERLUST PVT.LTD.<br>Country India
+            </span>
+            <span class="social-media">
+                <i class="fab fa-facebook"></i>&emsp;<i class="fab fa-instagram"></i>&emsp;<i class="fab fa-twitter"></i>
+            </span>            
+        </div>
+    </body>
+</html>

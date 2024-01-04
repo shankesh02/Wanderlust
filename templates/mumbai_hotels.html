@@ -1,0 +1,202 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+            integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>
+            Mumbai Hotels 
+        </title>
+        <link rel="icon" type="image/x-icon" href="../static/Wanderlust.png">
+    </head>
+    <style>
+        html,body{
+            margin: 0;
+            height: 100%;
+        }
+        body{
+            background: linear-gradient(to bottom, skyblue, navy);
+            background-attachment: fixed ;
+        }
+        .logo{
+            position: relative;
+            padding-left: 40px;
+            top: 10px;
+        }
+        .icons{
+            position: relative;
+            margin-left: 30%;
+            border-radius: 50%;
+            top: -50px;
+        }
+        p.hotel{
+            height: 250px;
+            border-radius: 5px;
+            background-color: white;
+            position: relative;
+            left: 200px;
+            width: 70%;
+            font-size: larger;
+            top: -40px;
+        }
+        .gh1{
+            position: relative;
+            top: -157px;
+            left: 50px;
+        }
+        .heading{
+            position: relative;
+            display: flex;
+            left: 205px;
+        }
+        .landmark{
+            position: relative;
+            display: flex;
+            left: 205px;
+        }
+        .info{
+            position: relative;
+            display: flex;
+            left: 205px;
+        }
+        #button{
+            border: solid skyblue;
+        }
+        .copyrights{
+            background-color: black;
+            position: relative;
+            /* top: 200px; */
+            /* padding-left: 68%; */
+            font-size: larger;
+            color: white;
+            height: 100px;
+        }
+        .copy{
+            position: relative;
+            float: right;
+            color: white;   
+            right: 50px;
+            top: 25px; 
+        }
+        .social-media{
+            position: relative;
+            float: left;  
+            left: 50px;
+            top: 40px;
+        }
+    </style>
+    <script>
+        function fbooking(pl,p)
+        {
+            window.location.href = `/hbook/${pl}/${p}`;
+        }
+    </script>
+    <body>
+        <div class="logo">
+            <a href="{{url_for('home')}}" name="logo">
+                <img src="../static/Wanderlust.png" height="50px" width="80px">
+            </a>
+            
+        </div>
+        <div class="icons">
+            <a href="{{url_for('flights')}}" >
+                <img src="../static/flights.png" height="70px" width="70px">
+            </a>
+            <a href="{{ url_for('hotels')}}">
+                <img src="../static/Hotelc.png" height="70px" width="70px" style="position: relative; left: 30px;">
+            </a>
+            <a href="{{ url_for('holiday')}}">
+                <img src="../static/Holiday Packages.png" height="70px" width="100px" style="position: relative; left: 60px;">
+            </a>
+            <a href="{{ url_for('trains')}}">
+                <img src="../static/Trains.png" height="70px" width="70px" style="position: relative; left: 90px;">
+            </a>
+            <a href="{{ url_for('activity')}}">
+                <img src="../static/Activities.png" height="70px" width="70px" style="position: relative; left: 120px;">
+            </a>
+        </div>
+
+        <img src="../static/mumbai.jpg" height="70px" width="70px" style="border-radius: 50%; position: relative; left:50px; top:50px;">
+        
+        <p class="hotel">
+            <img src="../static/mumbai_hotel1.png" height="200px" width="200px" style="position: relative; top: 25px; left: 25px;">
+            <span class="gh1"><mark style="background-color: rgb(14, 97, 129); color: white;">&nbsp;4.0&nbsp;</mark>&emsp;&#11088;&#11088;&#11088;&#11088;&#11088;<br>
+                <font class="heading" style="font-size: xx-large;"><b>The Orchid Hotel</b><br></font>
+                <font class="landmark" style="color: grey; font-size: large;">Near Mumbai Airport</font><br><br>
+                <font class="info" style="font-size: 15px; position: relative; top: -20px;">This 5 star hotel in Mumbai is located near mumbai airport. Full Address of property is<br>
+                Nehru Road, Vile Parle east, adjacent to mumbai airport domestic view. This Hotel <br>
+                have 4.0 out of 5 rating where 4.5/5 for location and 4.4/5 for security and 4.2/5 for<br>
+                hospitality. Key amenities of this property are business center and conference room.</font><br>
+                <font style="font-size: medium; position: relative; top: -180px; left: 784px; color: grey;"><del>&#8377;11,294</del></font><br>
+                <font style="font-size: x-large; position: relative; top: -180px; left: 770px; font-weight: bold;">&#8377;8,999</font><br>
+                <font style="font-size: small; position: relative; top: -180px; left: 784px; color: grey;">Per Night</font><br>
+                <button id="button" onclick="fbooking('The Orchid Hotel',8999)" style="position: relative; left: 740px; top: -140px; background-color: skyblue; height: 30px; width: 100px; border-radius: 50px;">
+                <b>Book Now</b>
+                </button>
+            </span>
+        </p>
+
+        <p class="hotel">
+            <img src="../static/mumbai_hotel2.png" height="200px" width="200px" style="position: relative; top: 25px; left: 25px;">
+            <span class="gh1"><mark style="background-color: rgb(14, 97, 129); color: white;">&nbsp;4.6&nbsp;</mark>&emsp;&#11088;&#11088;&#11088;&#11088;&#11088;<br>
+                <font class="heading" style="font-size: xx-large;"><b>Taj Santacruz</b><br></font>
+                <font class="landmark" style="color: grey; font-size: large;">Near Mumbai Airport</font><br><br>
+                <font class="info" style="font-size: 15px; position: relative; top: -20px;">Location of the Resort is near Mumbai International Airport. It is a 5 star hotel<br>
+                with a overall rating of 4.6 out of 5 where 4.8/5 for room and 4.7/5 for cleanliness and <br>
+                4.7/5 for location. Top facilities of this hotel are yoga, lounge and butler service.</font><br>
+                <font style="font-size: x-large; position: relative; top: -150px; left: 768px; font-weight: bold;">&#8377;21,750</font><br>
+                <font style="font-size: small; position: relative; top: -150px; left: 790px; color: grey;">Per Night</font><br>
+                <button id="button" onclick="fbooking('Taj Santacruz',21750)" style="position: relative; left: 750px; top: -110px; background-color: skyblue; height: 30px; width: 100px; border-radius: 50px;">
+                <b>Book Now</b>
+                </button>
+            </span>
+        </p>
+
+        <p class="hotel">
+            <img src="../static/mumbai_hotel3.png" height="200px" width="200px" style="position: relative; top: 25px; left: 25px;">
+            <span class="gh1"><mark style="background-color: rgb(14, 97, 129); color: white;">&nbsp;3.7&nbsp;</mark>&emsp;&#11088;&#11088;&#11088;&#11088;<br>
+                <font class="heading" style="font-size: xx-large;"><b>Ginger Mumbai, Andheri East</b><br></font>
+                <font class="landmark" style="color: grey; font-size: large;">Andheri East</font><br><br>
+                <font class="info" style="font-size: 15px; position: relative; top: -20px;">This 4 star Hotel in Mumbai is located in Andheri East. Full Address of property is <br>
+                Ginger Mumbai Andheri Teli Gali Road, Andheri East, Mumbai - 400069. It has<br>
+                an overall rating of 3.7 out of 5 where 4.1/5 for security and 4.0/5 for cleanliness<br>
+                and 4.0/5 for location. Key amenities of this property are lounge and business centre.</font><br>
+                <font style="font-size: x-large; position: relative; top: -165px; left: 770px; font-weight: bold;">&#8377;5,249</font><br>
+                <font style="font-size: small; position: relative; top: -165px; left: 784px; color: grey;">Per Night</font><br>
+                <button id="button" onclick="fbooking('Ginger Mumbai, Andheri East',5249)" style="position: relative; left: 750px; top: -120px; background-color: skyblue; height: 30px; width: 100px; border-radius: 50px;">
+                <b>Book Now</b>
+                </button>
+            </span>
+        </p>
+
+        <p class="hotel">
+            <img src="../static/mumbai_hotel4.png" height="200px" width="200px" style="position: relative; top: 25px; left: 25px;">
+            <span class="gh1"><mark style="background-color: rgb(14, 97, 129); color: white;">&nbsp;4.2&nbsp;</mark>&emsp;&#11088;&#11088;&#11088;&#11088;&#11088;<br>
+                <font class="heading" style="font-size: xx-large;"><b>Hilton Mumbai</b><br></font>
+                <font class="landmark" style="color: grey; font-size: large;">Near Mumbai Airport</font><br><br>
+                <font class="info" style="font-size: 15px; position: relative; top: -20px;">This 5 star Hotel in Mumbai is located near Mumbai Airport. Full address <br>
+                of property is Sahar Airport Road, Andheri East. This Hotel have 4.2 out of 5 <br>
+                rating where 4.5/5 for security and 4.4/5 for location and 4.4/5 for hospitality.<br>
+                Top facilities of this hotel are lounge, conference room and business centre.</font><br>
+                <font style="font-size: medium; position: relative; top: -180px; left: 785px; color: grey;"><del>&#8377;17,799</del></font><br>
+                <font style="font-size: x-large; position: relative; top: -180px; left: 760px; font-weight: bold;">&#8377;14,596</font><br>
+                <font style="font-size: small; position: relative; top: -180px; left: 784px; color: grey;">Per Night</font><br>
+                <button id="button" onclick="fbooking('Hilton Mumbai',14596)" style="position: relative; left: 750px; top: -140px; background-color: skyblue; height: 30px; width: 100px; border-radius: 50px;">
+                <b>Book Now</b>
+                </button>
+            </span>
+        </p>
+        <br><br><br><br><br>
+        <div class="copyrights">
+            <span class="copy">
+                &copy; 2023 WANDERLUST PVT.LTD.<br>Country India
+            </span>
+            <span class="social-media">
+                <i class="fab fa-facebook"></i>&emsp;<i class="fab fa-instagram"></i>&emsp;<i class="fab fa-twitter"></i>
+            </span>            
+        </div>
+    </body>
+</html>

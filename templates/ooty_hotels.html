@@ -1,0 +1,207 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+            integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>
+            Ooty Hotels 
+        </title>
+        <link rel="icon" type="image/x-icon" href="../static/Wanderlust.png">
+    </head>
+    <style>
+        html,body{
+            margin: 0;
+            height: 100%;
+        }
+        body{
+            background: linear-gradient(to bottom, skyblue, navy);
+            background-attachment: fixed ;
+        }
+        .logo{
+            position: relative;
+            padding-left: 40px;
+            top: 10px;
+        }
+        .icons{
+            position: relative;
+            margin-left: 30%;
+            border-radius: 50%;
+            top: -50px;
+        }
+        p.hotel{
+            height: 250px;
+            border-radius: 5px;
+            background-color: white;
+            position: relative;
+            left: 200px;
+            width: 70%;
+            font-size: larger;
+            top: -40px;
+        }
+        .gh1{
+            position: relative;
+            top: -157px;
+            left: 50px;
+        }
+        .heading{
+            position: relative;
+            display: flex;
+            left: 205px;
+        }
+        .landmark{
+            position: relative;
+            display: flex;
+            left: 205px;
+        }
+        .info{
+            position: relative;
+            display: flex;
+            left: 205px;
+        }
+        #button{
+            border: solid skyblue;
+        }
+        .copyrights{
+            background-color: black;
+            position: relative;
+            /* top: 200px; */
+            /* padding-left: 68%; */
+            font-size: larger;
+            color: white;
+            height: 100px;
+        }
+        .copy{
+            position: relative;
+            float: right;
+            color: white;   
+            right: 50px;
+            top: 25px; 
+        }
+        .social-media{
+            position: relative;
+            float: left;  
+            left: 50px;
+            top: 40px;
+        }
+    </style>
+    <script>
+        function fbooking(pl,p)
+        {
+            window.location.href = `/hbook/${pl}/${p}`;
+        }
+    </script>
+    <body>
+        <div class="logo">
+            <a href="{{url_for('home')}}" name="logo">
+                <img src="../static/Wanderlust.png" height="50px" width="80px">
+            </a>
+            
+        </div>
+        <div class="icons">
+            <a href="{{url_for('flights')}}" >
+                <img src="../static/flights.png" height="70px" width="70px">
+            </a>
+            <a href="{{ url_for('hotels')}}">
+                <img src="../static/Hotelc.png" height="70px" width="70px" style="position: relative; left: 30px;">
+            </a>
+            <a href="{{ url_for('holiday')}}">
+                <img src="../static/Holiday Packages.png" height="70px" width="100px" style="position: relative; left: 60px;">
+            </a>
+            <a href="{{ url_for('trains')}}">
+                <img src="../static/Trains.png" height="70px" width="70px" style="position: relative; left: 90px;">
+            </a>
+            <a href="{{ url_for('activity')}}">
+                <img src="../static/Activities.png" height="70px" width="70px" style="position: relative; left: 120px;">
+            </a>
+        </div>
+
+        <img src="../static/ooty.jpg" height="70px" width="70px" style="border-radius: 50%; position: relative; left:50px; top:50px;">
+        
+        <p class="hotel">
+            <img src="../static/ooty_hotel1.png" height="200px" width="200px" style="position: relative; top: 25px; left: 25px;">
+            <span class="gh1"><mark style="background-color: rgb(14, 97, 129); color: white;">&nbsp;3.9&nbsp;</mark>&emsp;&#11088;&#11088;&#11088;&#11088;<br>
+                <font class="heading" style="font-size: xx-large;"><b>Hotel Lakeview</b><br></font>
+                <font class="landmark" style="color: grey; font-size: large;">Central Ooty</font><br><br>
+                <font class="info" style="font-size: 15px; position: relative; top: -20px;">This 3 star hotel in Ooty is located in Central Ooty. Full Address of property is West <br>
+                lake road Ooty - 643004. This Hotel have 3.9 out of 5 rating where 4.2/5 for<br>
+                loaction and 4.1/5 for cleanliness and 4.1/5 for hospitality. Key amenities of this <br>
+                property are indoor free Wi-Fi, lawn and room service.</font><br>
+                <font style="font-size: medium; position: relative; top: -180px; left: 790px; color: grey;"><del>&#8377;3,100</del></font><br>
+                <font style="font-size: x-large; position: relative; top: -180px; left: 770px; font-weight: bold;">&#8377;2,914</font><br>
+                <font style="font-size: small; position: relative; top: -180px; left: 784px; color: grey;">Per Night</font><br>
+                <button id="button" onclick="fbooking('Hotel Lakeview',2914)" style="position: relative; left: 740px; top: -140px; background-color: skyblue; height: 30px; width: 100px; border-radius: 50px;">
+                <b>Book Now</b>
+                </button>
+            </span>
+        </p>
+
+        <p class="hotel">
+            <img src="../static/ooty_hotel2.png" height="200px" width="200px" style="position: relative; top: 25px; left: 25px;">
+            <span class="gh1"><mark style="background-color: rgb(14, 97, 129); color: white;">&nbsp;4.1&nbsp;</mark>&emsp;&#11088;&#11088;&#11088;<br>
+                <font class="heading" style="font-size: xx-large;"><b>Mountain Trails</b><br></font>
+                <font class="landmark" style="color: grey; font-size: large;">T Mynali&nbsp;|&nbsp;14.2 km from city centre</font><br><br>
+                <font class="info" style="font-size: 15px; position: relative; top: -20px;">This is a 3 star Villa in Ooty located in T Mynali. Full address of the property<br>
+                is T. Mynali, Perar, Thumanatty Post, Ooty - 643002. This villa have 4.1 out of 5<br>
+                rating where 4.6/5 for locationand 4.3/5 for check-in experience and 4.2/5 for host<br>
+                responsiveness. Key amenities of this property are caretaker, living room and<br>
+                power backup.</font><br>
+                <font style="font-size: medium; position: relative; top: -200px; left: 790px; color: grey;"><del>&#8377;4,500</del></font><br>
+                <font style="font-size: x-large; position: relative; top: -200px; left: 770px; font-weight: bold;">&#8377;3,626</font><br>
+                <font style="font-size: small; position: relative; top: -200px; left: 784px; color: grey;">Per Night</font><br>
+                <button id="button" onclick="fbooking('Mountain Trails',3626)" style="position: relative; left: 740px; top: -155px; background-color: skyblue; height: 30px; width: 100px; border-radius: 50px;">
+                <b>Book Now</b>
+                </button>
+            </span>
+        </p>
+
+        <p class="hotel">
+            <img src="../static/ooty_hotel3.png" height="200px" width="200px" style="position: relative; top: 25px; left: 25px;">
+            <span class="gh1"><mark style="background-color: rgb(14, 97, 129); color: white;">&nbsp;4.2&nbsp;</mark>&emsp;&#11088;&#11088;&#11088;&#11088;<br>
+                <font class="heading" style="font-size: xx-large;"><b>Sterling Ooty Elk Hill</b><br></font>
+                <font class="landmark" style="color: grey; font-size: large;">Fern Hill</font><br><br>
+                <font class="info" style="font-size: 15px; position: relative; top: -30px;">Location of the resort is Fern Hill (P.O Box No 25, Ramakrishna Mutt<br>
+                Road, R,K Puram, Elk Hill, Ooty). It's a 4 star resort eitha overall rating 4.2 out<br>
+                of 5 where 5.0/5 for security and 4.4/5 for cleanliness and 4.4/5 for hospitality.<br>
+                Top facilities of this resort are kids play area, kitchenette and outdoor sports</font><br>
+                <font style="font-size: medium; position: relative; top: -180px; left: 790px; color: grey;"><del>&#8377;6,110</del></font><br>
+                <font style="font-size: x-large; position: relative; top: -180px; left: 770px; font-weight: bold;">&#8377;4,202</font><br>
+                <font style="font-size: small; position: relative; top: -180px; left: 784px; color: grey;">Per Night</font><br>
+                <button id="button" onclick="fbooking('Sterling Ooty Elk Hill',4202)" style="position: relative; left: 740px; top: -140px; background-color: skyblue; height: 30px; width: 100px; border-radius: 50px;">
+                <b>Book Now</b>
+                </button>
+            </span>
+        </p>
+
+        <p class="hotel">
+            <img src="../static/ooty_hotel4.png" height="200px" width="200px" style="position: relative; top: 25px; left: 25px;">
+            <span class="gh1"><mark style="background-color: rgb(14, 97, 129); color: white;">&nbsp;4.6&nbsp;</mark>&emsp;&#11088;&#11088;&#11088;<br>
+                <font class="heading" style="font-size: xx-large;"><b>Trident</b><br></font>
+                <font class="landmark" style="color: grey; font-size: large;">Fern Hill<br></font><br>
+                <font class="info" style="font-size: 15px; position: relative; top: -10px;">This 3 star hotel in Ooty is located in Fern Hill. Full Address of property is <br>
+                Hotel Trident, 94A, St. Thomas Church  gate junction, Ooty main bus  <br>
+                stand, Ooty. This Apart-hotel have 4.6 out of 5 rating where 4.7/5 for<br>
+                location and 4.7/5 for food and 4.6/5 for amenities. Key amenities of this<br>
+                property are EV charging station, caretaker and living room.</font><br>
+                <font style="font-size: medium; position: relative; top: -180px; left: 790px; color: grey;"><del>&#8377;4,400</del></font><br>
+                <font style="font-size: x-large; position: relative; top: -180px; left: 770px; font-weight: bold;">&#8377;3,093</font><br>
+                <font style="font-size: small; position: relative; top: -180px; left: 784px; color: grey;">Per Night</font><br>
+                <button id="button" onclick="fbooking('Trident',3093)" style="position: relative; left: 740px; top: -140px; background-color: skyblue; height: 30px; width: 100px; border-radius: 50px;">
+                <b>Book Now</b>
+                </button>
+            </span>
+        </p>
+        <br><br><br><br><br>
+        <div class="copyrights">
+            <span class="copy">
+                &copy; 2023 WANDERLUST PVT.LTD.<br>Country India
+            </span>
+            <span class="social-media">
+                <i class="fab fa-facebook"></i>&emsp;<i class="fab fa-instagram"></i>&emsp;<i class="fab fa-twitter"></i>
+            </span>            
+        </div>
+    </body>
+</html>

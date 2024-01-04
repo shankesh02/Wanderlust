@@ -1,0 +1,214 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+            integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>
+            Theme Park Activities 
+        </title>
+        <link rel="icon" type="image/x-icon" href="../static/Wanderlust.png">
+        <style>
+            html,body{
+                margin: 0;
+                height: 100%;
+            }
+            body{
+                background: linear-gradient(to bottom, skyblue, navy);
+                background-attachment: fixed;
+            }
+            .logo{
+                position: relative;
+                padding-left: 40px;
+                top: 10px;
+            }
+            .icons{
+                position: relative;
+                margin-left: 30%;
+                border-radius: 50%;
+                top: -50px;
+            }
+            p.activity{
+                height: 250px;
+                border-radius: 5px;
+                background-color: white;
+                position: relative;
+                left: 200px;
+                width: 70%;
+                font-size: larger;
+                top: -40px;
+            }
+            .gh1{
+                position: relative;
+                top: -157px;
+                left: 50px;
+            }
+            .heading{
+                position: relative;
+                display: flex;
+                left: 205px;
+                top: -27px;
+            }
+            .time{
+                position: relative;
+                display: flex;
+                left: 250px;
+                top: -38px;
+            }
+            .info{
+                
+                position: relative;
+                display: flex;
+                left: 205px;
+                top: -60px;
+            }
+            #button{
+                border: solid skyblue;
+            }
+            .copyrights{
+                background-color: black;
+                position: relative;
+                font-size: larger;
+                color: white;
+                height: 100px;
+            }
+            .copy{
+                position: relative;
+                float: right;
+                color: white;   
+                right: 50px;
+                top: 25px; 
+            }
+            .social-media{
+                position: relative;
+                float: left;  
+                left: 50px;
+                top: 40px;
+            }
+            
+        </style>
+    </head>
+    <script>
+        function fbooking(a,h,p)
+        {
+            window.location.href = `/abook/${a}/${h}/${p}`;
+        }
+    </script>
+    <body>
+        <div class="logo">
+            <a href="{{url_for('home')}}" name="logo">
+                <img src="../static/Wanderlust.png" height="50px" width="80px">
+            </a>
+            
+        </div>
+        <div class="icons">
+            <a href="{{url_for('flights')}}" >
+                <img src="../static/flights.png" height="70px" width="70px">
+            </a>
+            <a href="{{ url_for('hotels')}}">
+                <img src="../static/hotels.png" height="70px" width="70px" style="position: relative; left: 30px;">
+            </a>
+            <a href="{{ url_for('holiday')}}">
+                <img src="../static/Holiday Packages.png" height="70px" width="100px" style="position: relative; left: 60px;">
+            </a>
+            <a href="{{ url_for('trains')}}">
+                <img src="../static/Trains.png" height="70px" width="70px" style="position: relative; left: 90px;">
+            </a>
+            <a href="{{ url_for('activity')}}">
+                <img src="../static/Activityc.png" height="70px" width="70px" style="position: relative; left: 120px;">
+            </a>
+        </div>
+
+        <img src="../static/park_activities.png" height="70px" width="70px" style="border-radius: 20%; position: relative; left:50px; top:50px;">
+        
+        <p class="activity">
+            <img src="../static/park_activity1.png" height="200px" width="200px" style="position: relative; top: 25px; left: 25px;">
+            <span class="gh1">
+                <font class="heading" style="font-size: xx-large;"><b>The Sanctuary of Truth in Pattaya</b><br></font>
+                <mark style="background-color: rgb(14, 97, 129); color: white; position: relative; left: 210px; top: -10px;">&nbsp;4.4&nbsp;</mark>   
+                <font class="time" style="font-size: 20px;">&nbsp;|&nbsp; &#128344; 6 Hours</font><br><br>
+                <font class="info" style="font-size: 15px;">The Sanctuary of Truth is an architecture marvel composed entirely of wood<br>
+                    without any metal nails. Constructed to preserve the building techniques of the past,<br>
+                    the building exemplifies hand-hewn woodworking skills in Thailand. Built based on <br>
+                    the religious philosophy of impermanence, the complex features four wings dedicated <br>
+                    to Thai, Khmer, Chinese and Indian religious iconography respectively.</font><br>
+                <font style="font-size: x-large; position: relative; top: -210px; left: 770px; font-weight: bold;">&#8377;1,760</font><br>
+                <font style="font-size: small; position: relative; top: -210px; left: 800px; color: grey;">Adult</font><br>
+                <button id="button" onclick="fbooking('The Sanctuary of Truth in Pattaya',6,1760)" style="position: relative; left: 750px; top: -150px; background-color: skyblue; height: 30px; width: 100px; border-radius: 50px;">
+                <b>Book Now</b>
+                </button>
+            </span>
+        </p>
+
+        <p class="activity">
+            <img src="../static/park_activity2.png" height="200px" width="200px" style="position: relative; top: 25px; left: 25px;">
+            <span class="gh1">
+                <font class="heading" style="font-size: xx-large;"><b>Ramayana Water Park</b><br></font>
+                <mark style="background-color: rgb(14, 97, 129); color: white; position: relative; left: 210px; top: -10px;">&nbsp;4.7&nbsp;</mark>   
+                <font class="time" style="font-size: 20px;">&nbsp;|&nbsp; &#128344; 6 Hours</font><br><br>
+                <font class="info" style="font-size: 15px;">Dive into a world of aquatic adventure as you explore the thrilling rides, family-friendly<br>
+                attractions, and massive pools of Ramayana Water Park. Spread out over 45 acres,<br>
+                this expansive park features 21 waterslides, 3 pools, and dozens of activities  <br>
+                sure to delight visitors of all ages. Endless fun & adventure at Thailand's biggest<br>
+                waterpark - 21 exhilarating water slides & 2 kid-friendly play zones</font><br>
+                <font style="font-size: x-large; position: relative; top: -210px; left: 775px; font-weight: bold;">&#8377;6,794</font><br>
+                <font style="font-size: small; position: relative; top: -210px; left: 810px; color: grey;">Adult</font><br>
+                <button id="button" onclick="fbooking('Ramayana Water Park',6,6794)" style="position: relative; left: 750px; top: -150px; background-color: skyblue; height: 30px; width: 100px; border-radius: 50px;">
+                <b>Book Now</b>
+                </button>
+            </span>
+        </p>
+
+        <p class="activity">
+            <img src="../static/park_activity3.png" height="200px" width="200px" style="position: relative; top: 25px; left: 25px;">
+            <span class="gh1">
+                <font class="heading" style="font-size: xx-large;"><b>Maafushi: Wakeboard & Water-Ski</b><br></font>
+                <mark style="background-color: rgb(14, 97, 129); color: white; position: relative; left: 210px; top: -10px;">&nbsp;4.7&nbsp;</mark>   
+                <font class="time" style="font-size: 20px;">&nbsp;|&nbsp; &#128344; 6 Hours</font><br><br>
+                <font class="info" style="font-size: 15px;">Enjoying the thrilling adventure, wake-boarding and waterskiing in Maldives.<br>
+                    You will have two options to direct tryout by own or tryout after the lesson provided<br>
+                    by us. Become a globetrotter and bring out the travel enthusiast hidden inside you.<br>
+                    Embrace your inner wanderlust and check off your bucket list. Be adventurous and <br>
+                    experience thrill and tranquility at the same time by availing phenomenal<br>
+                    and exclusive packages.</font><br>
+                    <font style="font-size: medium; position: relative; top: -240px; left: 793px; color: grey;"><del>&#8377;4,013</del></font><br>
+                <font style="font-size: x-large; position: relative; top: -240px; left: 770px; font-weight: bold;">&#8377;5,308</font><br>
+                <font style="font-size: small; position: relative; top: -240px; left: 800px; color: grey;">Adult</font><br>
+                <button id="button" onclick="fbooking('Maafushi: Wakeboard & Water-Ski',6,5308)" style="position: relative; left: 750px; top: -185px; background-color: skyblue; height: 30px; width: 100px; border-radius: 50px;">
+                <b>Book Now</b>
+                </button>
+            </span>
+        </p>
+
+        <p class="activity">
+            <img src="../static/park_activity4.png" height="200px" width="200px" style="position: relative; top: 25px; left: 25px;">
+            <span class="gh1">
+                <font class="heading" style="font-size: xx-large;"><b>Kayaking at Ao Thalane Krabi</b><br></font>
+                <mark style="background-color: rgb(14, 97, 129); color: white; position: relative; left: 210px; top: -10px;">&nbsp;4.3&nbsp;</mark>   
+                <font class="time" style="font-size: 20px;">&nbsp;|&nbsp; &#128344; 5 Hours</font><br><br>
+                <font class="info" style="font-size: 15px;">Step into a world of fun and adventure close to the heart of Bangkok. Enjoy<br>
+                fantastic rides including the Guinness World Record winner of the largest wave<br>
+                pool. Experience a full day of excitement at all 5 zones of the park which are<br>
+                accessible with your day pass. Indulge in a range of international cuisines with<br>
+                a buffet lunch at Si-Am Marine Restaurant</font><br>
+                <font style="font-size: x-large; position: relative; top: -210px; left: 770px; font-weight: bold;">&#8377;4,250</font><br>
+                <font style="font-size: small; position: relative; top: -210px; left: 802px; color: grey;">Adult</font><br>
+                <button id="button" onclick="fbooking('Kayaking at Ao Thalane Krabi',5,4250)" style="position: relative; left: 750px; top: -150px; background-color: skyblue; height: 30px; width: 100px; border-radius: 50px;">
+                <b>Book Now</b>
+                </button>
+            </span>
+        </p>
+        <br><br><br><br><br><br><br><br>
+        <div class="copyrights">
+            <span class="copy">
+                &copy; 2023 WANDERLUST PVT.LTD.<br>Country India
+            </span>
+            <span class="social-media">
+                <i class="fab fa-facebook"></i>&emsp;<i class="fab fa-instagram"></i>&emsp;<i class="fab fa-twitter"></i>
+            </span>            
+        </div>
+    </body>
+</html>

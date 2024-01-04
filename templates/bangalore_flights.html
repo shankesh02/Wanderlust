@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+            integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>
+            Bangalore Flights 
+        </title>
+        <link rel="icon" type="image/x-icon" href="../static/Wanderlust.png">
+    </head>
+    <style>
+        html,body{
+            margin: 0;
+            height: 100%;
+        }
+        body{
+            background: linear-gradient(to bottom, skyblue, navy);
+            background-attachment: fixed ;
+        }
+        .logo{
+            position: relative;
+            padding-left: 40px;
+            top: 10px;
+        }
+        .icons{
+            position: relative;
+            margin-left: 30%;
+            border-radius: 50%;
+            top: -50px;
+        }
+        p.flight{
+            height: 100px;
+            border-radius: 5px;
+            background-color: white;
+            position: relative;
+            left: 200px;
+            width: 70%;
+            font-size: larger;
+            top: -40px;
+        }
+        #button{
+            border: solid skyblue;
+        }
+        .copyrights{
+            background-color: black;
+            position: relative;
+            /* top: 400px; */
+            /* padding-left: 68%; */
+            font-size: larger;
+            color: white;
+            height: 100px;
+        }
+        .copy{
+            position: relative;
+            float: right;   
+            right: 50px;
+            top: 25px; 
+        }
+        .social-media{
+            position: relative;
+            float: left;   
+            left: 50px;
+            top: 40px;
+        }
+    </style>
+    <script>
+        function fbooking(f,t,p,h,a)
+        {
+            window.location.href = `/book/${f}/${t}/${p}/${h}/${a}`;
+        }
+    </script>
+    <body>
+        <div class="logo">
+            <a href="{{url_for('home')}}" name="logo">
+                <img src="../static/Wanderlust.png" height="50px" width="80px">
+            </a>
+            
+        </div>
+        <div class="icons">
+            <a href="{{url_for('flights')}}" >
+                <img src="../static/Flightc.png" height="70px" width="70px">
+            </a>
+            <a href="{{ url_for('hotels')}}">
+                <img src="../static/hotels.png" height="70px" width="70px" style="position: relative; left: 30px;">
+            </a>
+            <a href="{{ url_for('holiday')}}">
+                <img src="../static/Holiday Packages.png" height="70px" width="100px" style="position: relative; left: 60px;">
+            </a>
+            <a href="{{ url_for('trains')}}">
+                <img src="../static/Trains.png" height="70px" width="70px" style="position: relative; left: 90px;">
+            </a>
+            <a href="{{ url_for('activity')}}">
+                <img src="../static/Activities.png" height="70px" width="70px" style="position: relative; left: 120px;">
+            </a>
+        </div>
+        <img src="../static/bangalore.jpg" height="70px" width="70px" style="border-radius: 50%; position: relative; left:50px; top:50px;">
+        
+        <p class="flight">
+            <img src="../static/Vistara.png" height="50px" width="50px" style="position: relative; top: 25px; left: 25px;">
+            <b>&emsp;&emsp;&emsp;&emsp;12:00</b>&emsp;&emsp;&emsp;&emsp;&emsp;02h 45m&emsp;&emsp;&emsp;&emsp;&emsp;<b>14:45</b>
+            &emsp;&emsp;&emsp;&emsp;&emsp;<b>&#8377;5,179</b><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp; 
+            Bangalore &emsp;&emsp;&emsp;&nbsp;Non-Stop&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;Delhi
+            <button id="button" onclick="fbooking('Bangalore','Delhi',5179,'02h 45m','Vistara')" style="position: relative; left: 237px; top: -20px; background-color: skyblue; height: 30px; width: 100px; border-radius: 50px;">
+            <b>Book Now</b>
+            </button>
+        </p>
+
+        <p class="flight">
+            <img src="../static/Air India.jpg" height="50px" width="50px" style="position: relative; top: 25px; left: 25px;">
+            <b>&emsp;&emsp;&emsp;&emsp;17:30</b>&emsp;&emsp;&emsp;&emsp;&emsp;01h 35m&emsp;&emsp;&emsp;&emsp;&emsp;<b>19:05</b>
+            &emsp;&emsp;&emsp;&emsp;&emsp;<b>&#8377;3,049</b><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;
+            Bangalore &emsp;&emsp;&emsp;&nbsp;Non-Stop&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;Pune
+            <button id="button" onclick="fbooking('Bangalore','Pune',3049,'01h 35m','Air India')" style="position: relative; left: 240px; top: -20px; background-color: skyblue; height: 30px; width: 100px; border-radius: 50px;">
+                <b>Book Now</b>
+            </button>
+        </p>
+
+        <p class="flight">
+            <img src="../static/Indigo.png" height="50px" width="50px" style="position: relative; top: 25px; left: 25px;">
+            <b>&emsp;&emsp;&emsp;&emsp;00:05</b>&emsp;&emsp;&emsp;&emsp;&emsp;01h 40m&emsp;&emsp;&emsp;&emsp;&emsp;<b>01:45</b>
+            &emsp;&emsp;&emsp;&emsp;&emsp;<b>&#8377;2,502</b><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;
+            Bangalore &emsp;&emsp;&emsp;&nbsp;Non-Stop&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;Mumbai
+            <button id="button" onclick="fbooking('Bangalore','Mumbai',2502,'01h 40m','Indigo')" style="position: relative; left: 210px; top: -20px; background-color: skyblue; height: 30px; width: 100px; border-radius: 50px;">
+                <b>Book Now</b>
+            </button>
+        </p>
+
+        <p class="flight">
+            <img src="../static/Indigo.png" height="50px" width="50px" style="position: relative; top: 25px; left: 25px;">
+            <b>&emsp;&emsp;&emsp;&emsp;08:35</b>&emsp;&emsp;&emsp;&emsp;&emsp;02h 55m&emsp;&emsp;&emsp;&emsp;&emsp;<b>11:30</b>
+            &emsp;&emsp;&emsp;&emsp;&emsp;<b>&#8377;6,409</b><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp; 
+            Bangalore &emsp;&emsp;&emsp;&nbsp;Non-Stop&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;Kolkata
+            <button id="button" onclick="fbooking('Bangalore','Kolkata',6409,'02h 55m','Indigo')" style="position: relative; left: 215px; top: -20px; background-color: skyblue; height: 30px; width: 100px; border-radius: 50px;">
+                <b>Book Now</b>
+            </button>
+        </p>
+
+        <div class="copyrights">
+            <span class="copy">
+                &copy; 2023 WANDERLUST PVT.LTD.<br>Country India
+            </span>
+            <span class="social-media">
+                <i class="fab fa-facebook"></i>&emsp;<i class="fab fa-instagram"></i>&emsp;<i class="fab fa-twitter"></i>
+            </span>            
+        </div>
+    </body>
+</html>

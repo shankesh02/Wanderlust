@@ -1,0 +1,205 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+            integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>
+            Delhi Hotels 
+        </title>
+        <link rel="icon" type="image/x-icon" href="../static/Wanderlust.png">
+    </head>
+    <style>
+        html,body{
+            margin: 0;
+            height: 100%;
+        }
+        body{
+            background: linear-gradient(to bottom, skyblue, navy);
+            background-attachment: fixed ;
+        }
+        .logo{
+            position: relative;
+            padding-left: 40px;
+            top: 10px;
+        }
+        .icons{
+            position: relative;
+            margin-left: 30%;
+            border-radius: 50%;
+            top: -50px;
+        }
+        p.hotel{
+            height: 250px;
+            border-radius: 5px;
+            background-color: white;
+            position: relative;
+            left: 200px;
+            width: 70%;
+            font-size: larger;
+            top: -40px;
+        }
+        .gh1{
+            position: relative;
+            top: -157px;
+            left: 50px;
+        }
+        .heading{
+            position: relative;
+            display: flex;
+            left: 205px;
+        }
+        .landmark{
+            position: relative;
+            display: flex;
+            left: 205px;
+        }
+        .info{
+            position: relative;
+            display: flex;
+            left: 205px;
+        }
+        #button{
+            border: solid skyblue;
+        }
+        .copyrights{
+            background-color: black;
+            position: relative;
+            /* top: 200px; */
+            /* padding-left: 68%; */
+            font-size: larger;
+            color: white;
+            height: 100px;
+        }
+        .copy{
+            position: relative;
+            float: right;
+            color: white;   
+            right: 50px;
+            top: 25px; 
+        }
+        .social-media{
+            position: relative;
+            float: left;  
+            left: 50px;
+            top: 40px;
+        }
+    </style>
+    <script>
+        function fbooking(pl,p)
+        {
+            window.location.href = `/hbook/${pl}/${p}`;
+        }
+    </script>
+    <body>
+        <div class="logo">
+            <a href="{{url_for('home')}}" name="logo">
+                <img src="../static/Wanderlust.png" height="50px" width="80px">
+            </a>
+            
+        </div>
+        <div class="icons">
+            <a href="{{url_for('flights')}}" >
+                <img src="../static/flights.png" height="70px" width="70px">
+            </a>
+            <a href="{{ url_for('hotels')}}">
+                <img src="../static/Hotelc.png" height="70px" width="70px" style="position: relative; left: 30px;">
+            </a>
+            <a href="{{ url_for('holiday')}}">
+                <img src="../static/Holiday Packages.png" height="70px" width="100px" style="position: relative; left: 60px;">
+            </a>
+            <a href="{{ url_for('trains')}}">
+                <img src="../static/Trains.png" height="70px" width="70px" style="position: relative; left: 90px;">
+            </a>
+            <a href="{{ url_for('activity')}}">
+                <img src="../static/Activities.png" height="70px" width="70px" style="position: relative; left: 120px;">
+            </a>
+        </div>
+
+        <img src="../static/delhi.jpg" height="70px" width="70px" style="border-radius: 50%; position: relative; left:50px; top:50px;">
+        
+        <p class="hotel">
+            <img src="../static/delhi_hotel1.png" height="200px" width="200px" style="position: relative; top: 25px; left: 25px;">
+            <span class="gh1"><mark style="background-color: rgb(14, 97, 129); color: white;">&nbsp;4.5&nbsp;</mark>&emsp;&#11088;&#11088;&#11088;&#11088;<br>
+                <font class="heading" style="font-size: xx-large;"><b>Ibis New Delhi Aerocity</b><br></font>
+                <font class="landmark" style="color: grey; font-size: large;">Aerocity&nbsp;|&nbsp;4.4 km from Indhira Gandhi International Airport</font><br><br>
+                <font class="info" style="font-size: 15px; position: relative; top: -20px;">This 4 star hotel in Delhi is located in Aerocity. Full Address of property is Asset <br>
+                no 9, Hospitality District, Aerocity. This Hotel have 4.2 out of 5 <br>
+                rating where 4.6/5 for room and 4.4/5 for hospitality and 4.3/5 for cleanliness.<br>
+                Key amenities of this property are lounge, indoor games and free parking.</font><br>
+                <font style="font-size: x-large; position: relative; top: -160px; left: 770px; font-weight: bold;">&#8377;6,599</font><br>
+                <font style="font-size: small; position: relative; top: -160px; left: 784px; color: grey;">Per Night</font><br>
+                <button id="button" onclick="fbooking('Ibis New Delhi Aerocity',6599)" style="position: relative; left: 750px; top: -110px; background-color: skyblue; height: 30px; width: 100px; border-radius: 50px;">
+                <b>Book Now</b>
+                </button>
+            </span>
+        </p>
+
+        <p class="hotel">
+            <img src="../static/delhi_hotel2.png" height="200px" width="200px" style="position: relative; top: 25px; left: 25px;">
+            <span class="gh1"><mark style="background-color: rgb(14, 97, 129); color: white;">&nbsp;4.4&nbsp;</mark>&emsp;&#11088;&#11088;&#11088;<br>
+                <font class="heading" style="font-size: xx-large;"><b>Roseate House New Delhi</b><br></font>
+                <font class="landmark" style="color: grey; font-size: large;">Aerocity&nbsp;|&nbsp;3.5 km from Indhira Gandhi International Airport</font><br><br>
+                <font class="info" style="font-size: 15px; position: relative; top: -20px;">This 5 star Hotel in Delhi is located in Aerocity. Full address of the property is<br>
+                Plot no 10, GMR Hospitality District, Indhira Gandhi International Airport, Aerocity.<br>
+                It's a 5 star hotel with a overall rating of 5 out of 5 where 5/5 for cleanliness and<br>
+                5/5 for child-friendliness and 5/5 for hospitality. Key amenities of this property are<br>
+                Yoga, Lounge and Butler Service.</font><br>
+                <font style="font-size: medium; position: relative; top: -200px; left: 790px; color: grey;"><del>&#8377;22,999</del></font><br>
+                <font style="font-size: x-large; position: relative; top: -200px; left: 770px; font-weight: bold;">&#8377;14,949</font><br>
+                <font style="font-size: small; position: relative; top: -200px; left: 784px; color: grey;">Per Night</font><br>
+                <button id="button" onclick="fbooking('Roseate House New Delhi',14949)" style="position: relative; left: 750px; top: -160px; background-color: skyblue; height: 30px; width: 100px; border-radius: 50px;">
+                <b>Book Now</b>
+                </button>
+            </span>
+        </p>
+
+        <p class="hotel">
+            <img src="../static/delhi_hotel3.png" height="200px" width="200px" style="position: relative; top: 25px; left: 25px;">
+            <span class="gh1"><mark style="background-color: rgb(14, 97, 129); color: white;">&nbsp;4.7&nbsp;</mark>&emsp;&#11088;&#11088;&#11088;&#11088;<br>
+                <font class="heading" style="font-size: xx-large;"><b>Hotel The Royal Plaza</b><br></font>
+                <font class="landmark" style="color: grey; font-size: large;">Connaught Place&nbsp;|&nbsp;1.8 km from India Gate</font><br><br>
+                <font class="info" style="font-size: 15px; position: relative; top: -20px;">This 4 star resort in Goa is located in Connaught Place. Full Address of property is <br>
+                19, Ashok Road, Connaught Place, New Delhi.The Hotel have 4.7 out of 5 rating <br>
+                where 4.3/5 for location 4.3/5 for child-friendliness and 4.3/5 for location. Top<br>
+                facilities of this hotel are lounge, business centre  and conference hall.</font><br>
+                <font style="font-size: x-large; position: relative; top: -160px; left: 770px; font-weight: bold;">&#8377;10,199</font><br>
+                <font style="font-size: small; position: relative; top: -160px; left: 784px; color: grey;">Per Night</font><br>
+                <button id="button" onclick="fbooking('Hotel The Royal Plaza',10199)" style="position: relative; left: 750px; top: -115px; background-color: skyblue; height: 30px; width: 100px; border-radius: 50px;">
+                <b>Book Now</b>
+                </button>
+            </span>
+        </p>
+
+        <p class="hotel">
+            <img src="../static/delhi_hotel4.png" height="200px" width="200px" style="position: relative; top: 25px; left: 25px;">
+            <span class="gh1"><mark style="background-color: rgb(14, 97, 129); color: white;">&nbsp;4.6&nbsp;</mark>&emsp;&#11088;&#11088;&#11088;&#11088;<br>
+                <font class="heading" style="font-size: xx-large;"><b>Lemon Tree Premier</b><br></font>
+                <font class="landmark" style="color: grey; font-size: large;">Aerocity&nbsp;|&nbsp;4.1 km from Indhira Gandhi International Airport</font><br><br>
+                <font class="info" style="font-size: 15px; position: relative; top: -20px;">This 4 star hotel in Delhi is located in . Full Address of property is <br>
+                Asset no 6, Aerocity, Hospitality District, IGI Airport. This Hotel have 4.6 out of 5 <br>
+                rating where 4.3/5 for location and 4.1/5 for hospitality and 3.7/5 for room.<br>
+                Top facilities of this hotel are EV charging station, lounge and business centre.</font><br>
+                <font style="font-size: medium; position: relative; top: -180px; left: 790px; color: grey;"><del>&#8377;10,609</del></font><br>
+                <font style="font-size: x-large; position: relative; top: -180px; left: 770px; font-weight: bold;">&#8377;8,976</font><br>
+                <font style="font-size: small; position: relative; top: -180px; left: 784px; color: grey;">Per Night</font><br>
+                <button id="button" onclick="fbooking('Lemon Tree Premier',8976)" style="position: relative; left: 750px; top: -130px; background-color: skyblue; height: 30px; width: 100px; border-radius: 50px;">
+                <b>Book Now</b>
+                </button>
+            </span>
+        </p>
+        <br><br><br><br><br>
+        <div class="copyrights">
+            <span class="copy">
+                &copy; 2023 WANDERLUST PVT.LTD.<br>Country India
+            </span>
+            <span class="social-media">
+                <i class="fab fa-facebook"></i>&emsp;<i class="fab fa-instagram"></i>&emsp;<i class="fab fa-twitter"></i>
+            </span>            
+        </div>
+
+    </body>
+</html>

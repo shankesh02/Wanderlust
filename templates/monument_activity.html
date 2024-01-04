@@ -1,0 +1,210 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+            integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>
+            Monument Activities 
+        </title>
+        <link rel="icon" type="image/x-icon" href="../static/Wanderlust.png">
+        <style>
+            html,body{
+                margin: 0;
+                height: 100%;
+            }
+            body{
+                background: linear-gradient(to bottom, skyblue, navy);
+                background-attachment: fixed;
+            }
+            .logo{
+                position: relative;
+                padding-left: 40px;
+                top: 10px;
+            }
+            .icons{
+                position: relative;
+                margin-left: 30%;
+                border-radius: 50%;
+                top: -50px;
+            }
+            p.activity{
+                height: 250px;
+                border-radius: 5px;
+                background-color: white;
+                position: relative;
+                left: 200px;
+                width: 70%;
+                font-size: larger;
+                top: -40px;
+            }
+            .gh1{
+                position: relative;
+                top: -157px;
+                left: 50px;
+            }
+            .heading{
+                position: relative;
+                display: flex;
+                left: 205px;
+                top: -27px;
+            }
+            .time{
+                position: relative;
+                display: flex;
+                left: 250px;
+                top: -38px;
+            }
+            .info{
+                
+                position: relative;
+                display: flex;
+                left: 205px;
+                top: -60px;
+            }
+            #button{
+                border: solid skyblue;
+            }
+            .copyrights{
+                background-color: black;
+                position: relative;
+                font-size: larger;
+                color: white;
+                height: 100px;
+            }
+            .copy{
+                position: relative;
+                float: right;
+                color: white;   
+                right: 50px;
+                top: 25px; 
+            }
+            .social-media{
+                position: relative;
+                float: left;  
+                left: 50px;
+                top: 40px;
+            }
+            
+        </style>
+    </head>
+    <script>
+        function fbooking(a,h,p)
+        {
+            window.location.href = `/abook/${a}/${h}/${p}`;
+        }
+    </script>
+    <body>
+        <div class="logo">
+            <a href="{{url_for('home')}}" name="logo">
+                <img src="../static/Wanderlust.png" height="50px" width="80px">
+            </a>
+            
+        </div>
+        <div class="icons">
+            <a href="{{url_for('flights')}}" >
+                <img src="../static/flights.png" height="70px" width="70px">
+            </a>
+            <a href="{{ url_for('hotels')}}">
+                <img src="../static/hotels.png" height="70px" width="70px" style="position: relative; left: 30px;">
+            </a>
+            <a href="{{ url_for('holiday')}}">
+                <img src="../static/Holiday Packages.png" height="70px" width="100px" style="position: relative; left: 60px;">
+            </a>
+            <a href="{{ url_for('trains')}}">
+                <img src="../static/Trains.png" height="70px" width="70px" style="position: relative; left: 90px;">
+            </a>
+            <a href="{{ url_for('activity')}}">
+                <img src="../static/Activityc.png" height="70px" width="70px" style="position: relative; left: 120px;">
+            </a>
+        </div>
+
+        <img src="../static/monument_activities.png" height="70px" width="70px" style="border-radius: 20%; position: relative; left:50px; top:50px;">
+        
+        <p class="activity">
+            <img src="../static/monument_activity1.png" height="200px" width="200px" style="position: relative; top: 25px; left: 25px;">
+            <span class="gh1">
+                <font class="heading" style="font-size: xx-large;"><b>Palace of Tipu Sultan</b><br></font>
+                <mark style="background-color: rgb(14, 97, 129); color: white; position: relative; left: 210px; top: -10px;">&nbsp;4.8&nbsp;</mark>   
+                <font class="time" style="font-size: 20px;">&nbsp;|&nbsp; &#128344; 12 Hours</font><br><br>
+                <font class="info" style="font-size: 15px;">This monument is open from 8 A.M to 6 P.M. A prime example of <br>
+                    Indo-Islamic architecture, this astounding palace was the summer residence <br>
+                    of the Mysorean emperor, Tipu Sultan. Completed in 1791, The Palace of Tipu Sultan <br>
+                    is a marvelous structure that boasts the architectural capabilities of rulers that were far <br>
+                    ahead of their times. The Government of Karnataka maintains the palace today which <br>
+                    is now a hotspot tourist destination.</font><br>
+                <font style="font-size: x-large; position: relative; top: -240px; left: 798px; font-weight: bold;">&#8377;20</font><br>
+                <font style="font-size: small; position: relative; top: -240px; left: 778px; color: grey;">Per Person</font><br>
+                <button id="button" onclick="fbooking('Palace of Tipu Sultan',12,20)" style="position: relative; left: 750px; top: -180px; background-color: skyblue; height: 30px; width: 100px; border-radius: 50px;">
+                <b>Book Now</b>
+                </button>
+            </span>
+        </p>
+
+        <p class="activity">
+            <img src="../static/monument_activity2.png" height="200px" width="200px" style="position: relative; top: 25px; left: 25px;">
+            <span class="gh1">
+                <font class="heading" style="font-size: xx-large;"><b>Group of Temples - Srinagar</b><br></font>
+                <mark style="background-color: rgb(14, 97, 129); color: white; position: relative; left: 210px; top: -10px;">&nbsp;3.9&nbsp;</mark>   
+                <font class="time" style="font-size: 20px;">&nbsp;|&nbsp; &#128344; 12 Hours</font><br><br>
+                <font class="info" style="font-size: 15px;">This monument is open from 8 A.M to 6 P.M. Kiramchi is a quaint little <br>
+                    village in Udhampur district of Jammu & Kashmir State. Lying at a distance of <br>
+                    12 kms north of Udhampur on Udhampur-Lander road and 67 km from Jammu, <br>
+                    comprise of five temples and two small shrines. This valley amidst green <br>
+                    mountains is located at an elevation of 730 m above the mean sea level. Two rivulets <br>
+                    namely `Birunala (also known as Bhutesvari) and Kiramchi are draining in this area.</font><br>
+                <font style="font-size: x-large; position: relative; top: -240px; left: 798px; font-weight: bold;">&#8377;20</font><br>
+                <font style="font-size: small; position: relative; top: -240px; left: 778px; color: grey;">Per Person</font><br>
+                <button id="button" onclick="fbooking('Group of Temples - Srinagar',12,20)" style="position: relative; left: 750px; top: -180px; background-color: skyblue; height: 30px; width: 100px; border-radius: 50px;">
+                <b>Book Now</b>
+                </button>
+            </span>
+        </p>
+
+        <p class="activity">
+            <img src="../static/monument_activity3.png" height="200px" width="200px" style="position: relative; top: 25px; left: 25px;">
+            <span class="gh1">
+                <font class="heading" style="font-size: xx-large;"><b>Karla Caves - Mumbai</b><br></font>
+                <mark style="background-color: rgb(14, 97, 129); color: white; position: relative; left: 210px; top: -10px;">&nbsp;4.1&nbsp;</mark>   
+                <font class="time" style="font-size: 20px;">&nbsp;|&nbsp; &#128344; 12 Hours</font><br><br>
+                <font class="info" style="font-size: 15px;">A wide complex of ancient Buddhist Indian rock-cut caves at Karli near Lonavala, <br>
+                    Maharashtra, the Karla Caves  are in close proximity to Bhaja Caves, Patan Buddhist <br>
+                    Cave, Bedse Caves and Nasik Caves.</font><br>
+                <font style="font-size: x-large; position: relative; top: -175px; left: 798px; font-weight: bold;">&#8377;20</font><br>
+                <font style="font-size: small; position: relative; top: -175px; left: 778px; color: grey;">Per Person</font><br>
+                <button id="button" onclick="fbooking('Karla Caves - Mumbai',12,20)" style="position: relative; left: 750px; top: -130px; background-color: skyblue; height: 30px; width: 100px; border-radius: 50px;">
+                <b>Book Now</b>
+                </button>
+            </span>
+        </p>
+
+        <p class="activity">
+            <img src="../static/monument_activity4.png" height="200px" width="200px" style="position: relative; top: 25px; left: 25px;">
+            <span class="gh1">
+                <font class="heading" style="font-size: xx-large;"><b>Ubud Jungle Swing Tour</b><br></font>
+                <mark style="background-color: rgb(14, 97, 129); color: white; position: relative; left: 210px; top: -10px;">&nbsp;4.6&nbsp;</mark>   
+                <font class="time" style="font-size: 20px;">&nbsp;|&nbsp; &#128344; 5 Hours</font><br><br>
+                <font class="info" style="font-size: 15px;"> A fort hill situated in Maharashta, the Raigad Fort is perched in the Sahyadri <br>
+                    mountain range and offers deep insights about the rich history and culture of <br>
+                    the Shivaji Maharaj reign.</font><br>
+                <font style="font-size: x-large; position: relative; top: -180px; left: 798px; font-weight: bold;">&#8377;20</font><br>
+                <font style="font-size: small; position: relative; top: -180px; left: 778px; color: grey;">Per Person</font><br>
+                <button id="button" onclick="fbooking('Ubud Jungle Swing Tour',5,20)" style="position: relative; left: 750px; top: -130px; background-color: skyblue; height: 30px; width: 100px; border-radius: 50px;">
+                <b>Book Now</b>
+                </button>
+            </span>
+        </p>
+        <br><br><br><br><br><br><br><br>
+        <div class="copyrights">
+            <span class="copy">
+                &copy; 2023 WANDERLUST PVT.LTD.<br>Country India
+            </span>
+            <span class="social-media">
+                <i class="fab fa-facebook"></i>&emsp;<i class="fab fa-instagram"></i>&emsp;<i class="fab fa-twitter"></i>
+            </span>            
+        </div>
+    </body>
+</html>

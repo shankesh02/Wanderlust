@@ -1,0 +1,215 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+            integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>
+            Cruise Activities 
+        </title>
+        <link rel="icon" type="image/x-icon" href="../static/Wanderlust.png">
+        <style>
+            html,body{
+                margin: 0;
+                height: 100%;
+            }
+            body{
+                background: linear-gradient(to bottom, skyblue, navy);
+                background-attachment: fixed;
+            }
+            .logo{
+                position: relative;
+                padding-left: 40px;
+                top: 10px;
+            }
+            .icons{
+                position: relative;
+                margin-left: 30%;
+                border-radius: 50%;
+                top: -50px;
+            }
+            p.activity{
+                height: 250px;
+                border-radius: 5px;
+                background-color: white;
+                position: relative;
+                left: 200px;
+                width: 70%;
+                font-size: larger;
+                top: -40px;
+            }
+            .gh1{
+                position: relative;
+                top: -157px;
+                left: 50px;
+            }
+            .heading{
+                position: relative;
+                display: flex;
+                left: 205px;
+                top: -27px;
+            }
+            .time{
+                position: relative;
+                display: flex;
+                left: 250px;
+                top: -38px;
+            }
+            .info{
+                
+                position: relative;
+                display: flex;
+                left: 205px;
+                top: -60px;
+            }
+            #button{
+                border: solid skyblue;
+            }
+            .copyrights{
+                background-color: black;
+                position: relative;
+                font-size: larger;
+                color: white;
+                height: 100px;
+            }
+            .copy{
+                position: relative;
+                float: right;
+                color: white;   
+                right: 50px;
+                top: 25px; 
+            }
+            .social-media{
+                position: relative;
+                float: left;  
+                left: 50px;
+                top: 40px;
+            }
+            
+        </style>
+    </head>
+    <script>
+        function fbooking(a,h,p)
+        {
+            window.location.href = `/abook/${a}/${h}/${p}`;
+        }
+    </script>
+    <body>
+        <div class="logo">
+            <a href="{{url_for('home')}}" name="logo">
+                <img src="../static/Wanderlust.png" height="50px" width="80px">
+            </a>
+            
+        </div>
+        <div class="icons">
+            <a href="{{url_for('flights')}}" >
+                <img src="../static/flights.png" height="70px" width="70px">
+            </a>
+            <a href="{{ url_for('hotels')}}">
+                <img src="../static/hotels.png" height="70px" width="70px" style="position: relative; left: 30px;">
+            </a>
+            <a href="{{ url_for('holiday')}}">
+                <img src="../static/Holiday Packages.png" height="70px" width="100px" style="position: relative; left: 60px;">
+            </a>
+            <a href="{{ url_for('trains')}}">
+                <img src="../static/Trains.png" height="70px" width="70px" style="position: relative; left: 90px;">
+            </a>
+            <a href="{{ url_for('activity')}}">
+                <img src="../static/Activityc.png" height="70px" width="70px" style="position: relative; left: 120px;">
+            </a>
+        </div>
+
+        <img src="../static/cruise_activities.png" height="70px" width="70px" style="border-radius: 20%; position: relative; left:50px; top:50px;">
+        
+        <p class="activity">
+            <img src="../static/cruise_activity1.png" height="200px" width="200px" style="position: relative; top: 25px; left: 25px;">
+            <span class="gh1">
+                <font class="heading" style="font-size: xx-large;"><b>Coco - Cola London Eye & River Cruise</b><br></font>
+                <mark style="background-color: rgb(14, 97, 129); color: white; position: relative; left: 210px; top: -10px;">&nbsp;4.1&nbsp;</mark>   
+                <font class="time" style="font-size: 20px;">&nbsp;|&nbsp; &#128344; 2 Hours</font><br><br>
+                <font class="info" style="font-size: 15px;">See London from a different perspective on the London Eye and enjoy<br>
+                    the new  4D experience, a groundbreaking 3D film with spectacular in-theatre<br>
+                    effects that include wind, bubbles and mist. Get an experience of riding on the <br>
+                    world's tallest observation wheels.</font><br>
+                <font style="font-size: x-large; position: relative; top: -195px; left: 770px; font-weight: bold;">&#8377;3,424</font><br>
+                <font style="font-size: small; position: relative; top: -195px; left: 800px; color: grey;">Adult</font><br>
+                <button id="button" onclick="fbooking('Coco - Cola London Eye & River Cruise',2,3424)" style="position: relative; left: 750px; top: -150px; background-color: skyblue; height: 30px; width: 100px; border-radius: 50px;">
+                <b>Book Now</b>
+                </button>
+            </span>
+        </p>
+
+        <p class="activity">
+            <img src="../static/cruise_activity2.png" height="200px" width="200px" style="position: relative; top: 25px; left: 25px;">
+            <span class="gh1">
+                <font class="heading" style="font-size: xx-large;"><b>Sandbank Snorkling and Sunset Cruise</b><br></font>
+                <mark style="background-color: rgb(14, 97, 129); color: white; position: relative; left: 210px; top: -10px;">&nbsp;4.7&nbsp;</mark>   
+                <font class="time" style="font-size: 20px;">&nbsp;|&nbsp; &#128344; 4 Hours</font><br><br>
+                <font class="info" style="font-size: 15px;">Enjoy the natural beauty of the Maldives island paradise with TripAdvisors' <br>
+                    leading Hulhumale tour company. Combining two snorkeling points filled with <br>
+                    marine life and colourful coral with time on an  untouched sandbank. Ideal for <br>
+                    picnics or for merely enjoying time sunbathing, snorkeling or swimming in<br>
+                    the clear blue lagoon. Safety has always been important to our business, this is<br>
+                    why our guides are Emergency First Responders & Life Guard Certified.<br></font><br>
+                <font style="font-size: x-large; position: relative; top: -230px; left: 770px; font-weight: bold;">&#8377;13,588</font><br>
+                <font style="font-size: small; position: relative; top: -230px; left: 810px; color: grey;">Adult</font><br>
+                <button id="button" onclick="fbooking('Sandbank Snorkling and Sunset Cruise',4,13588)" style="position: relative; left: 750px; top: -180px; background-color: skyblue; height: 30px; width: 100px; border-radius: 50px;">
+                <b>Book Now</b>
+                </button>
+            </span>
+        </p>
+
+        <p class="activity">
+            <img src="../static/cruise_activity3.png" height="200px" width="200px" style="position: relative; top: 25px; left: 25px;">
+            <span class="gh1">
+                <font class="heading" style="font-size: xx-large;"><b>River Thames Showboat Dinner Cruise</b><br></font>
+                <mark style="background-color: rgb(14, 97, 129); color: white; position: relative; left: 210px; top: -10px;">&nbsp;4.3&nbsp;</mark>   
+                <font class="time" style="font-size: 20px;">&nbsp;|&nbsp; &#128344; 1-2 Hours</font><br><br>
+                <font class="info" style="font-size: 15px;">The best night in town is on the river! Wine, dine and dance on this great dinner cruise<br>
+                    on the Thames. Feast on a 4-course dinner aboard your sightseeing boat as you sail past<br>
+                    London attractions such as Big Ben, the London Eye and Tower Bridge, all illuminated<br>
+                    at night. While you eat and admire the sights, enjoy live entertainment from a cabaret<br>
+                    singer, and, if you wish, take to the dance floor. Showboat cruise is a great way to <br>
+                    experience London by night.</font><br>
+                    <font style="font-size: medium; position: relative; top: -245px; left: 790px; color: grey;"><del>&#8377;3,013</del></font><br>
+                <font style="font-size: x-large; position: relative; top: -245px; left: 770px; font-weight: bold;">&#8377;2,744</font><br>
+                <font style="font-size: small; position: relative; top: -245px; left: 800px; color: grey;">Adult</font><br>
+                <button id="button" onclick="fbooking('River Thames Showboat Dinner Cruise','1-2',2744)" style="position: relative; left: 750px; top: -200px; background-color: skyblue; height: 30px; width: 100px; border-radius: 50px;">
+                <b>Book Now</b>
+                </button>
+            </span>
+        </p>
+
+        <p class="activity">
+            <img src="../static/cruise_activity4.png" height="200px" width="200px" style="position: relative; top: 25px; left: 25px;">
+            <span class="gh1">
+                <font class="heading" style="font-size: xx-large;"><b>Half Day Luxury Cruise Tour</b><br></font>
+                <mark style="background-color: rgb(14, 97, 129); color: white; position: relative; left: 210px; top: -10px;">&nbsp;4.3&nbsp;</mark>   
+                <font class="time" style="font-size: 20px;">&nbsp;|&nbsp; &#128344; 5 Hours</font><br><br>
+                <font class="info" style="font-size: 15px;"> Enjoy astonishing views of the Andaman Sea at Poda Island, Talay waek, Tup Island<br>
+                    and Phranang Cave at Raily. Relish the panoramic views of Krabi and calm your <br>
+                    senses to soft music on the cruise Raily Beach , also known as Rai Leh, is a large<br>
+                    peninsula between the city of Krabi and Ao Nang in Thailand which is accessible<br>
+                    only by boat due to high limestone cliffs. You will admire the amazing <br>
+                    views of Lake Batur and the volcano.</font><br>
+                <font style="font-size: x-large; position: relative; top: -230px; left: 770px; font-weight: bold;">&#8377;4,463</font><br>
+                <font style="font-size: small; position: relative; top: -230px; left: 802px; color: grey;">Adult</font><br>
+                <button id="button" onclick="fbooking('Half Day Luxury Cruise Tour',5,4463)" style="position: relative; left: 750px; top: -180px; background-color: skyblue; height: 30px; width: 100px; border-radius: 50px;">
+                <b>Book Now</b>
+                </button>
+            </span>
+        </p>
+        <br><br><br><br><br><br><br><br>
+        <div class="copyrights">
+            <span class="copy">
+                &copy; 2023 WANDERLUST PVT.LTD.<br>Country India
+            </span>
+            <span class="social-media">
+                <i class="fab fa-facebook"></i>&emsp;<i class="fab fa-instagram"></i>&emsp;<i class="fab fa-twitter"></i>
+            </span>            
+        </div>
+    </body>
+</html>

@@ -1,0 +1,760 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+            integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>
+            Wanderlust - #1 Travel Website
+        </title>
+        <link rel="icon" type="image/x-icon" href="../static/Wanderlust.png">
+        <!-- <script src="index.js"></script> -->
+        <style>
+            html,body{
+                margin: 0;
+                height: 100%;
+            }
+            body{
+                background: linear-gradient(to bottom, skyblue, navy);
+                background-attachment: fixed ;
+            }
+            .logo{
+                /* background-color: rgb(141, 211, 252); */
+                position: relative;
+                padding-left: 40px;
+                top: 10px;
+            }
+            .icons{
+                position: relative;
+                margin-left: 30%;
+                border-radius: 50%;
+                top: -50px;
+            }
+            .copyrights{
+                background-color: black;
+                position: relative;
+                font-size: larger;
+                color: white;
+                height: 470px;
+                top: -300px;
+            }
+            .links{
+                position: relative;
+                right: 800px;
+                font-size: medium;
+            }
+            .links:hover{
+                position: relative;
+                right: 800px;
+                font-size: medium;
+                color: blue;
+            }
+
+            /* Slideshow container */
+            .slideshow-container {
+            max-width: 800px;
+            position: relative;
+            margin: auto;
+            }
+
+            /* Hide the images by default */
+            .mySlides {
+            display: none;
+            }
+
+            /* Next & previous buttons */
+            .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: 10px;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            }
+
+            /* Position the "next button" to the right */
+            .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+            }
+
+            /* On hover, add a black background color with a little bit see-through */
+            .prev:hover, .next:hover {
+            background-color: rgba(0,0,0,0.8);
+            }
+
+            /* The dots/bullets/indicators */
+            .dot {
+            cursor: pointer;
+            height: 5px;
+            width: 5px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+            }
+
+            .active, .dot:hover {
+            background-color: #717171;
+            }
+
+            /* Fading animation */
+            .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+            }
+
+            @keyframes fade {
+            from {opacity: .4}
+            to {opacity: 1}
+            }
+
+            .copy{
+                position: relative;
+                float: right;   
+                right: 50px;
+                top: 35px; 
+            }
+            .social-media{
+                position: relative;
+                float: left;   
+                left: 50px;
+                top: 50px;
+            }
+            .cloud {
+                position: absolute;
+                top: 1115px;
+                right: -500px;
+                opacity: .8;
+                animation: cloud 10s linear 0s infinite reverse;
+                z-index: 99;
+            }
+            @keyframes cloud {
+                from {right:-500px;}
+                to {right: 102%;}
+            }
+
+            .about-us{
+                background: linear-gradient(to right, navy,black);
+                color: skyblue;
+                border-radius: 20px;
+                height: 330px;
+                width: 60%;
+                position: relative;
+                left: 20%;
+                font-size: xx-large;
+                transition: width 2s, height 4s;
+                display: flex;
+                justify-content: center;
+                font-weight: bolder;
+                text-align: center;
+            }
+
+            .about-us:hover{
+                height: 330px;
+                width: 60%;
+                animation: shake 0.5s;
+                animation-iteration-count: 1;
+            } 
+
+            @keyframes shake {
+			0% { transform: translateX(0); }
+			25% { transform: translateX(-5px) rotate(-5deg); }
+			50% { transform: translateX(5px) rotate(5deg); }
+			75% { transform: translateX(5px) rotate(5deg); }
+			100% { transform: translateX(0); }
+		    }
+
+            .terms{
+                background: linear-gradient(to right, black,navy);
+                border-color: white;
+                color: skyblue;
+                border-radius: 20px;
+                height: 330px;
+                width: 60%;
+                position: relative;
+                left: 20%;
+                font-size: xx-large;
+                transition: width 2s, height 4s;
+                display: flex;
+                justify-content: center;
+                font-weight: bolder;
+                position: relative;
+                top: -100px;
+            }
+
+            .terms:hover{
+                height: 330px;
+                width: 60%;
+                animation: shake 0.5s;
+                animation-iteration-count: 1;
+            }
+            .abc{
+                color: rgb(198, 222, 245);
+                position: relative;
+                top: -300px;
+                font-size: large;
+                text-align:center;
+            }
+
+            .xyz{
+                color: rgb(198, 222, 245);
+                position: relative;
+                top: -330px;
+                left: 25%;
+                font-size: large;
+                text-align:justify;
+
+            }
+            .fill{
+                font-size: xx-large;
+                position: relative;
+                display: flex;
+                justify-content: center;
+                top: 170px;
+                left: 50px;
+            }
+
+            .signout{
+                background-color: skyblue; 
+                border: 1.5px solid black; 
+                width: 15%; height: 30px; 
+                position: relative; 
+                float: right; 
+                top: 25px; 
+                right: 7%; 
+                border-radius: 15px;
+            }
+
+            .signout:hover{
+                background-color: black;
+                border: black;
+                color: white;
+            }
+
+/* BALLOON */
+
+        .container,.balloon,.balloon:after,.balloon:before,.basket,.basket:before,.basket:after,.rope,.sun,.clouds,.clouds:before,.clouds:after{
+        position:absolute;
+        bottom:0;
+        left:0;
+        right:0;
+        top:0;
+        margin:auto;
+      }
+      
+      .balloon{
+        height:150px; /* changed from 300px */
+        width:150px; /* changed from 300px */
+        background:#5fccfb;
+        border-radius:50%;
+        top:-75px; /* changed from -150px */
+        border:5px solid black; /* changed from 10px */
+        animation:bob 2s ease-in-out infinite;
+        position: absolute;
+        left: -1150px;
+        top: 50px;
+      }
+      
+      .balloon:before{
+        content:'';
+        position:absolute;
+        height:150px; /* changed from 300px */
+        width:100px; /* changed from 200px */
+        background:#7abff0;
+        border-radius:50%;
+        border:5px solid black; /* changed from 10px */
+      }
+      
+      .balloon:after{
+        content:'';
+        position:absolute;
+        height:150px; /* changed from 300px */
+        width:30px; /* changed from 60px */
+        background:#2fa3e1;;
+        border-radius:50%;
+        border:5px solid black; /* changed from 10px */
+      }
+      
+      .basket{
+        height:50px; /* changed from 75px */
+        width:50px; /* changed from 75px */
+        background: black;
+        border-radius:4px;
+        top:200px; /* changed from 350px */
+        animation:bob 2s ease-in-out infinite;
+        position: absolute;
+        left: -1150px;
+        top: 340px;
+      }
+      
+      
+      .basket:before{
+        content:'';
+        height:10px;
+        width:60px; /* changed from 90px */
+        left:-5px;
+        top:-40px; /* changed from -60px */
+        background:black;
+        border-radius:200px;
+      }
+      
+      
+      .basket:after{
+        content:'';
+        
+      }
+      
+      .rope{
+        height:70px;
+        width:7px; /* changed from 10px */
+        background: black;
+        /*top:195px;*/ /* changed from 205px */
+        /*left:65px; *//* changed from 85px */
+        animation:bob-rope 2s ease-in-out infinite;
+      }
+      
+      .rope.right{
+        transform:rotate(25deg);
+        position: absolute;
+        left: -1100px;
+      }
+      
+      .rope.left{
+        transform:rotate(-25deg);
+        left:-65px; /* changed from -85px */
+        position: absolute;
+        left: -1200px;
+      }
+      
+      
+      @keyframes bob{
+        0%,100%{
+          transform:translateY(0) rotate(0deg);
+        }
+        50%{
+          transform:translateY(-40px) rotate(-2deg); /* changed from -80px */
+        }
+      }
+      
+      @keyframes bob-rope{
+         0%,100%{
+           top:250px; /* changed from 220px */
+        }
+        50%{
+          top:165px; /* changed from 50px */
+        }
+      }
+
+
+      /* TRAINS */
+      #metro1{
+   background-position:top;
+   height:400px;
+}
+#metro{
+   margin-top:-100px;
+   width:100%;
+   height:60px;
+   background-color:transparent;
+   transform:translateX(0px);
+   animation-name:movetrain;
+   animation-duration:8s;
+   animation-iteration-count:infinite;
+}
+#metro span{
+   display:inline-block;
+}
+.door, .door2{
+   width:30px;
+   height:43px;
+   background-color:rgb(61, 61, 157);
+   position:absolute;
+   margin-top:18px;
+   margin-left:10px;
+   box-shadow:inset 0 -5px 0 navy;
+   border:1px solid black;
+}
+.door2{
+   width:25px;
+   margin-top:-18px;
+   margin-left:215px;
+}
+.door::before, .door2::before{
+   content:"";
+   width:20px;
+   height:19px;
+   background-color:#008ACB;
+   box-shadow:inset 0 0 10px #004FC8, inset 0 2px 0 blue;
+   position:absolute;
+   margin-top:4px;
+   margin-left:2px;
+   border:3px solid navy;
+}
+.door2::before{
+   width:17px;
+   margin-left:1px;
+}
+.mirror, .mirror1{
+   width:154px;
+   height:15px;
+   background-color:#666665;
+   margin-top:18px;
+   margin-left:50px;
+   border:1px solid black;
+}
+.mirror1{
+   width:140px;
+   border-radius:0 100% 0 0;
+}
+.mirror span, .mirror1 span{
+   display:inline-block;
+}
+.m1, .m2, .m3, .m4, .m22{
+   display:inline-block;
+   width:35px;
+   height:11px;
+   background-color:#008ACB;
+   position:absolute;
+   margin-top:1px;
+   margin-left:1px;
+   box-shadow:inset 0 0 8px #004FC8;
+   border:1px solid blue;
+}
+.m22{
+   width:70px;
+   border-radius:0 100% 0 0;
+   margin-left:42px;
+}
+.m2{
+   margin-left:40px;
+}
+.m3{
+   margin-left:79px;
+}
+.m4{   
+   margin-left:117px;
+}
+.back{
+   background-color:#E3E1E1;
+   width:250px;
+   height:60px;
+   border-radius:0 0 10px 10px;
+   box-shadow: 0 8px 6px -6px yellow, inset 0 9px 0 skyblue, inset 0 15px 0 black;
+}
+.back::after{
+   content:"";
+   background-color:black;
+   width:6px;
+   height:10px;
+   position:absolute;
+   margin-left:249px;
+   margin-top:1px;
+   border-radius:10px;
+}
+.back::before{
+   content:"";
+   width:250px;
+   height:20px;
+   background-color:navy;
+   border-top:1px solid navy;
+   box-shadow:inset 0px 4px 0px #E3E1E1, 0 4px 0px black,inset 0 -5px 0px navy;
+   position:absolute;
+   margin-top:40px;
+   border-radius:0px 0px 10px 10px;
+}
+.engine{
+   background-color:#E3E1E1;
+   width:300px;
+   height:60px;
+   border-radius:0px 100% 10px 10px;
+   box-shadow: 0 8px 6px -6px yellow, inset 0 9px 0 skyblue, inset 0 15px 0 black;
+}
+.engine::before{
+   content:"";
+   width:280px;
+   height:20px;
+   background-color:navy;
+   border-top:1px solid navy;
+   box-shadow:inset 0px 4px 0px #E3E1E1, 0 4px 0px black,inset 0 -5px 0px navy;
+   position:absolute;
+   margin-top:40px;
+   border-radius:0 100% 10px 10px;
+}
+
+.engine::after{
+   content:"";
+   width:4px;
+   height:4px;
+   position:absolute;
+   margin-left:30px;
+   margin-top:-63px;
+   border-radius:50%;
+   animation-name:spark1;
+   animation-duration:2s;
+   animation-iteration-count:infinite;
+}
+
+@keyframes movetrain{
+   from{
+      transform:translateX(-100%);
+   }   
+   to{
+      transform:translateX(100%);
+   }
+   80%{
+      transform:translateX(300px);
+   }
+   81%{
+      transform:translateX(310px);
+   }
+   82%{
+      transform:translateX(311px);
+   }
+   83%{
+      transform:translateX(312px);
+   }
+   84%{
+      transform:translateX(313px);
+   }
+   85%{
+      transform:translateX(314px);
+   }
+   89%{
+      transform:translateX(320px);
+   }
+   90%{
+      transform:translateX(400px);
+   }
+}
+        </style>
+    </head>
+    <script>
+        function signout(){
+            window.location.href = "{{url_for('signup')}}"
+        }
+    </script>
+    <body>
+        <div class="logo">
+            <a href="{{url_for('home')}}" name="logo">
+                <img src="../static/Wanderlust.png" height="50px" width="80px">
+            </a>
+            
+        </div>
+        <div class="icons">
+            <a href="{{url_for('flights')}}" >
+                <img src="../static/flights.png" height="70px" width="70px">
+            </a>
+            <a href="{{ url_for('hotels')}}">
+                <img src="../static/hotels.png" height="70px" width="70px" style="position: relative; left: 30px;">
+            </a>
+            <a href="{{ url_for('holiday')}}">
+                <img src="../static/Holiday Packages.png" height="70px" width="100px" style="position: relative; left: 60px;">
+            </a>
+            <a href="{{ url_for('trains')}}">
+                <img src="../static/Trains.png" height="70px" width="70px" style="position: relative; left: 90px;">
+            </a>
+            <a href="{{ url_for('activity')}}">
+                <img src="../static/Activities.png" height="70px" width="70px" style="position: relative; left: 120px;">
+            </a>
+            <button class="signout" onclick="signout()">Sign Out</button>
+        </div>
+        
+        <div class="slideshow-container">
+            <br><br><br><br><br>
+            <!-- Full-width images with number and caption text -->
+         <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img src="../static/img1.jpg" style="width:100%">
+        </div>
+          
+        <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img src="../static/img2.jpg" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img src="../static/img3.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img src="../static/img4.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img src="../static/img5.jpg" style="width:100%">
+        </div> 
+
+        
+          
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div><br>
+          
+          <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+
+
+        <div class="balloon"></div>
+        <div class="rope left"></div>
+        <div class="rope right"></div>
+        <div class="basket"></div>
+
+        <br><br><br><br>
+
+        <div class="about-us">
+            ABOUT US
+        </div>
+        <div class="abc"><br>Welcome to our travel website! We are a team of passionate travelers who have a<br> deep love for exploring new destinations and
+            experiencing different cultures.<br> Our goal is to inspire and assist fellow travelers in planning their own adventures<br> by providing comprehensive
+            and reliable information about various destinations around <br>the world. Our website features a wide range of travel guides, tips, and
+            recommendations,<br> covering everything from popular tourist attractions to hidden gems off the beaten path.<br> We also offer practical advice
+            on travel planning, budgeting, and safety to help ensure<br> that our readers have the best possible travel experience. Whether you're
+            looking to <br>plan a romantic getaway, an adventurous trek, or a family vacation, our website has<br>  something for everyone. We are constantly
+            updating our content to ensure that it remains<br> current and relevant, and we welcome feedback and suggestions from our readers. <br>
+            Thank you for visiting our travel website, and we hope that our content inspires you to <br>embark on your own unforgettable journey!<br>
+        </div>
+        <br><br>
+        <div class="cloud cloud1">
+            <img  src="https://images.vexels.com/media/users/3/145795/isolated/preview/05cd33059a006bf49006097af4ccba98-plane-in-flight-by-vexels.png" style="height: 200px; width: 200px;" />
+            <!-- <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTT-ejexOknZGjD-qQxPqM6isT8ASMaVK98g&usqp=CAU" style="height: 200px; width: 200px;" /> -->
+        </div> 
+        <br><br>
+        <div class="terms">
+            TERMS & CONDITIONS
+        </div>
+        <div class="xyz">&bull;  You must provide accurate information when booking travel services through our website.<br>
+            &bull; You are responsible for paying for the services you book and any fees charged by payment providers.<br>
+            &bull; You are responsible for obtaining and providing all necessary travel documents and may need to purchase<br>&emsp;travel insurance.<br>
+            &bull; Our website is not responsible for the quality, safety, or legality of the services provided by airlines, hotels,<br>&emsp; or car rental companies.<br>
+            &bull; The content and design of our website are protected by copyright and other intellectual property rights.<br>
+            &bull; We have a Privacy Policy that explains how we collect, use, and protect your personal information.<br>
+            &bull; These terms and conditions are governed by the laws of the jurisdiction in which you reside.
+        </div>
+
+        <div id="electric">
+        </div>
+        <div id="metro1">
+        </div>
+        <div id="metro" style="position: relative; top: -300px;">
+           <span class="back">
+              <div class="door"></div>
+              <div class="mirror">
+                 <span class="m1"></span>
+                 <span class="m2"></span>
+                 <span class="m3"></span>
+                 <span class="m4"></span>
+              </div>
+              <div class="door2"></div>
+           </span>
+           <span class="back">
+              <div class="door"></div>
+              <div class="mirror">
+                 <span class="m1"></span>
+                 <span class="m2"></span>
+                 <span class="m3"></span>
+                 <span class="m4"></span>
+              </div>
+              <div class="door2"></div>
+           </span>
+           <span class="engine">
+              <div class="spark">
+              </div><div class="spark1"></div>
+              <div class="door"></div>
+              <div class="mirror1">
+                 <span class="m1"></span>
+                 <span class="m22"></span>
+              </div>
+           </span>
+        </div>
+        <div class="track">
+        </div>
+        <div class="copyrights">
+            <span class="copy">
+                &copy; 2023 WANDERLUST PVT.LTD.<br>Country India<br><br>
+                <i class="fas fa-phone-square-alt"></i>&emsp;123-456-7890<br><br>
+                <i class="fa fa-envelope"></i>&emsp;wanderlust@gmail.com<br><br>
+                <i class="fas fa-map-marker-alt"></i>&emsp;&nbsp;PSG College Of Technology<br><br>
+                <i>" The best things in life <br>are the people we love,<br> the places we've been,<br> and the memories we've<br> made along the way. "<br><br>&emsp;&emsp;&emsp;&emsp;- Anonymous</i>
+            </span>
+            <span class="social-media">
+                <i class="fab fa-facebook"></i>&emsp;<i class="fab fa-instagram"></i>&emsp;<i class="fab fa-twitter"></i><br><br>
+                <i>" Travel is not just<br> a way to escape life,<br> but it's a way <br>to experience life <br>like never before. "</i><br><br><br>
+                <img src="../static/qrcode.png" height="100px" width="100px">
+            </span>
+            <span class="fill">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.1919420216477!2d77.00063011428873!3d11.024221157586702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8582f1435fa59%3A0x137d95bfd8909293!2sPSG%20College%20Of%20Technology!5e0!3m2!1sen!2sin!4v1679251750130!5m2!1sen!2sin" 
+                width="600" height="300" style=" position:relative; bottom: 100px; right: 50px; border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </span>            
+        </div>
+
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+
+            // Next/previous controls
+            function plusSlides(n) {
+            showSlides(slideIndex += n);
+            }
+
+            // Thumbnail image controls
+            function currentSlide(n) {
+            showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) 
+            {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) 
+                {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+            }
+
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}
+            x[myIndex-1].style.display = "block";
+            setTimeout(carousel, 3000);
+            }
+    
+        </script>
+    </body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+            integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>
+            Goa Hotels 
+        </title>
+        <link rel="icon" type="image/x-icon" href="../static/Wanderlust.png">
+    </head>
+    <style>
+        html,body{
+            margin: 0;
+            height: 100%;
+        }
+        body{
+            background: linear-gradient(to bottom, skyblue, navy);
+            background-attachment: fixed ;
+        }
+        .logo{
+            position: relative;
+            padding-left: 40px;
+            top: 10px;
+        }
+        .icons{
+            position: relative;
+            margin-left: 30%;
+            border-radius: 50%;
+            top: -50px;
+        }
+        p.hotel{
+            height: 250px;
+            border-radius: 5px;
+            background-color: white;
+            position: relative;
+            left: 200px;
+            width: 70%;
+            font-size: larger;
+            top: -40px;
+        }
+        .gh1{
+            position: relative;
+            top: -157px;
+            left: 50px;
+        }
+        .heading{
+            position: relative;
+            display: flex;
+            left: 205px;
+        }
+        .landmark{
+            position: relative;
+            display: flex;
+            left: 205px;
+        }
+        .info{
+            position: relative;
+            display: flex;
+            left: 205px;
+        }
+        #button{
+            border: solid skyblue;
+        }
+        .copyrights{
+            background-color: black;
+            position: relative;
+            /* top: 200px; */
+            /* padding-left: 68%; */
+            font-size: larger;
+            color: white;
+            height: 100px;
+        }
+        .copy{
+            position: relative;
+            float: right;
+            color: white;   
+            right: 50px;
+            top: 25px; 
+        }
+        .social-media{
+            position: relative;
+            float: left;  
+            left: 50px;
+            top: 40px;
+        }
+    </style>
+    <script>
+        function fbooking(pl,p)
+        {
+            window.location.href = `/hbook/${pl}/${p}`;
+        }
+    </script>
+    <body>
+        <div class="logo">
+            <a href="{{url_for('home')}}" name="logo">
+                <img src="../static/Wanderlust.png" height="50px" width="80px">
+            </a>
+            
+        </div>
+        <div class="icons">
+            <a href="{{url_for('flights')}}" >
+                <img src="../static/flights.png" height="70px" width="70px">
+            </a>
+            <a href="{{ url_for('hotels')}}">
+                <img src="../static/Hotelc.png" height="70px" width="70px" style="position: relative; left: 30px;">
+            </a>
+            <a href="{{ url_for('holiday')}}">
+                <img src="../static/Holiday Packages.png" height="70px" width="100px" style="position: relative; left: 60px;">
+            </a>
+            <a href="{{ url_for('trains')}}">
+                <img src="../static/Trains.png" height="70px" width="70px" style="position: relative; left: 90px;">
+            </a>
+            <a href="{{ url_for('activity')}}">
+                <img src="../static/Activities.png" height="70px" width="70px" style="position: relative; left: 120px;">
+            </a>
+        </div>
+
+        <img src="../static/goa.jpg" height="70px" width="70px" style="border-radius: 50%; position: relative; left:50px; top:50px;">
+        
+        <p class="hotel">
+            <img src="../static/goa_hotel1.png" height="200px" width="200px" style="position: relative; top: 25px; left: 25px;">
+            <span class="gh1"><mark style="background-color: rgb(14, 97, 129); color: white;">&nbsp;4.2&nbsp;</mark>&emsp;&#11088;&#11088;&#11088;&#11088;<br>
+                <font class="heading" style="font-size: xx-large; position: relative; right: 35px;"><b>Ibis Styles Goa Calangute Resort</b><br></font>
+                <font class="landmark" style="color: grey; font-size: large; position: relative; top: 5px;">Calangute&nbsp;|&nbsp;7-8 minutes walk from Calangute Beach</font><br><br>
+                <font class="info" style="font-size: 15px; position: relative; top: -20px;">This 4 star hotel in Goa is located in Calangute. Full Address of property is Survey <br>
+                166-Naikawaddo-Calangute,Dr Afonso Rd,Calangute. This Hotel have 4.2 out of 5 <br>
+                rating where 4.6/5 for security and 4.4/5 for child-friendliness and 4.3/5 for cleanliness.<br>
+                Key amenities of this property are indoor games, kids play area and conference room.</font><br>
+                <font style="font-size: x-large; position: relative; top: -150px; left: 770px; font-weight: bold;">&#8377;6,399</font><br>
+                <font style="font-size: small; position: relative; top: -150px; left: 784px; color: grey;">Per Night</font><br>
+                <button id="button" onclick="fbooking('Ibis Styles Goa Calangute Resort',6399)" style="position: relative; left: 750px; top: -120px; background-color: skyblue; height: 30px; width: 100px; border-radius: 50px;">
+                <b>Book Now</b>
+                </button>
+            </span>
+        </p>
+
+        <p class="hotel">
+            <img src="../static/goa_hotel2.png" height="200px" width="200px" style="position: relative; top: 25px; left: 25px;">
+            <span class="gh1"><mark style="background-color: rgb(14, 97, 129); color: white;">&nbsp;4.3&nbsp;</mark>&emsp;&#11088;&#11088;&#11088;<br>
+                <font class="heading" style="font-size: xx-large; position: relative; right: 35px;"><b>Grand Vatika Resort</b><br></font>
+                <font class="landmark" style="color: grey; font-size: large;">Arambol&nbsp;|&nbsp;2.7 km from Mandrem Beach</font><br><br>
+                <font class="info" style="font-size: 15px; top: -30px;">Location of the Resort is Madhlawada, Pernem Road, Arambol, Goa. <br>
+                It's a 3 star resort with overall rating 4.3 out of 5 where 4.6/5 for hospitality <br>
+                and 4.4/5 for cleanliness and 4.3/5 for child-friendliness. Top facilities of this <br>
+                resort are EV Charging station, free parking and free Wi-Fi.</font><br>
+                <font style="font-size: medium; position: relative; top: -170px; left: 790px; color: grey;"><del>&#8377;3,399</del></font><br>
+                <font style="font-size: x-large; position: relative; top: -170px; left: 770px; font-weight: bold;">&#8377;1,771</font><br>
+                <font style="font-size: small; position: relative; top: -170px; left: 784px; color: grey;">Per Night</font><br>
+                <button id="button" onclick="fbooking('Grand Vatika Resort',1771)" style="position: relative; left: 750px; top: -140px; background-color: skyblue; height: 30px; width: 100px; border-radius: 50px;">
+                <b>Book Now</b>
+                </button>
+            </span>
+        </p>
+
+        <p class="hotel">
+            <img src="../static/goa_hotel3.png" height="200px" width="200px" style="position: relative; top: 25px; left: 25px;">
+            <span class="gh1"><mark style="background-color: rgb(14, 97, 129); color: white;">&nbsp;4.2&nbsp;</mark>&emsp;&#11088;&#11088;&#11088;&#11088;<br>
+                <font class="heading" style="font-size: xx-large; position: relative; right: 35px;"><b>Ocean Palms Goa</b><br></font>
+                <font class="landmark" style="color: grey; font-size: large;">Calangute&nbsp;|&nbsp;7-8 minutes walk from Calangute Beach</font><br><br>
+                <font class="info" style="font-size: 15px; top: -30px;">This 4 star resort in Goa is located in Calangute. Full Address of property is <br>
+                E-1/304/5/6 A/B/C, Ocean Palms Goa, Opp. Holiday street, Calangute, North Goa, <br>
+                Goa - 403516.This Resort have 4.2 out of 5 rating where 4.5/5 for hospitality and<br>
+                4.3/5 for child-friendliness and 4.3/5 for location. Key amenities of this property are<br>
+                free parking, kids play area and lawn.</font><br>
+                <font style="font-size: medium; position: relative; top: -200px; left: 790px; color: grey;"><del>&#8377;8,750</del></font><br>
+                <font style="font-size: x-large; position: relative; top: -200px; left: 770px; font-weight: bold;">&#8377;4,911</font><br>
+                <font style="font-size: small; position: relative; top: -200px; left: 784px; color: grey;">Per Night</font><br>
+                <button id="button" onclick="fbooking('Ocean Palms Goa',4911)" style="position: relative; left: 750px; top: -155px; background-color: skyblue; height: 30px; width: 100px; border-radius: 50px;">
+                <b>Book Now</b>
+                </button>
+            </span>
+        </p>
+
+        <p class="hotel">
+            <img src="../static/goa_hotel4.png" height="200px" width="200px" style="position: relative; top: 25px; left: 25px;">
+            <span class="gh1"><mark style="background-color: rgb(14, 97, 129); color: white;">&nbsp;3.6&nbsp;</mark>&emsp;&#11088;&#11088;&#11088;&#11088;<br>
+                <font class="heading" style="font-size: xx-large; position: relative; right: 35px;"><b>Silver Sands Serenity</b><br></font>
+                <font class="landmark" style="color: grey; font-size: large;">Candolim&nbsp;|&nbsp;7-8 minutes walk from Candolim Beach</font><br><br>
+                <font class="info" style="font-size: 15px; top: -30px;">This 4 star hotel in Goa is located in Candolim. Full Address of property is <br>
+                House no. 788/E, Pinto's waddo, Canolim, Bardez, Goa. This Hotel have 3.6 out of 5 <br>
+                rating where 4.3/5 for location and 4.1/5 for room and 3.7/5 for cleanliness.<br>
+                Top facilities of this hotel are free parking, conference room and bar.</font><br>
+                <font style="font-size: medium; position: relative; top: -180px; left: 790px; color: grey;"><del>&#8377;4,999</del></font><br>
+                <font style="font-size: x-large; position: relative; top: -180px; left: 770px; font-weight: bold;">&#8377;3,615</font><br>
+                <font style="font-size: small; position: relative; top: -180px; left: 784px; color: grey;">Per Night</font><br>
+                <button id="button" onclick="fbooking('Silver Sands Serenity',3615)" style="position: relative; left: 750px; top: -140px; background-color: skyblue; height: 30px; width: 100px; border-radius: 50px;">
+                <b>Book Now</b>
+                </button>
+            </span>
+        </p>
+        <br><br><br><br><br>
+        <div class="copyrights">
+            <span class="copy">
+                &copy; 2023 WANDERLUST PVT.LTD.<br>Country India
+            </span>
+            <span class="social-media">
+                <i class="fab fa-facebook"></i>&emsp;<i class="fab fa-instagram"></i>&emsp;<i class="fab fa-twitter"></i>
+            </span>            
+        </div>
+    </body>
+</html>

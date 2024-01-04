@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+            integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>
+            Goa Trains 
+        </title>
+        <link rel="icon" type="image/x-icon" href="../static/Wanderlust.png">
+        <style>
+            html,body{
+            margin: 0;
+            height: 100%;
+            }
+            body{
+                background: linear-gradient(to bottom, skyblue, navy);
+                background-attachment: fixed;
+            }
+            .logo{
+                position: relative;
+                padding-left: 40px;
+                top: 10px;
+            }
+            .icons{
+                position: relative;
+                margin-left: 30%;
+                border-radius: 50%;
+                top: -50px;
+            }
+            p.train{
+                height: 100px;
+                border-radius: 5px;
+                background-color: white;
+                position: relative;
+                left: 200px;
+                width: 70%;
+                font-size: larger;
+                top: -40px;
+            }
+            #button{
+                border: solid skyblue;
+            }
+            .copyrights{
+            background-color: black;
+            position: relative;
+            font-size: larger;
+            color: white;
+            height: 100px;
+            }
+            .copy{
+                position: relative;
+                float: right;
+                color: white;   
+                right: 50px;
+                top: 25px; 
+            }
+            .social-media{
+                position: relative;
+                float: left;  
+                left: 50px;
+                top: 40px;
+            }
+        </style>
+    </head>
+    <script>
+        function fbooking(f,t,p,h)
+        {
+            window.location.href = `/tbook/${f}/${t}/${p}/${h}`;
+        }
+    </script>
+    <body>
+        <div class="logo">
+            <a href="{{url_for('home')}}" name="logo">
+                <img src="../static/Wanderlust.png" height="50px" width="80px">
+            </a>
+            
+        </div>
+        <div class="icons">
+            <a href="{{url_for('flights')}}" >
+                <img src="../static/flights.png" height="70px" width="70px">
+            </a>
+            <a href="{{ url_for('hotels')}}">
+                <img src="../static/hotels.png" height="70px" width="70px" style="position: relative; left: 30px;">
+            </a>
+            <a href="{{ url_for('holiday')}}">
+                <img src="../static/Holiday Packages.png" height="70px" width="100px" style="position: relative; left: 60px;">
+            </a>
+            <a href="{{ url_for('trains')}}">
+                <img src="../static/Trainc.png" height="70px" width="70px" style="position: relative; left: 90px;">
+            </a>
+            <a href="{{ url_for('activity')}}">
+                <img src="../static/Activities.png" height="70px" width="70px" style="position: relative; left: 120px;">
+            </a>
+        </div>
+
+        <img src="../static/goa.jpg" height="70px" width="70px" style="border-radius: 50%; position: relative; left:50px; top:50px;">
+        
+        <p class="train">
+            <img src="../static/irctc.png" height="50px" width="50px" style="position: relative; top: 25px; left: 25px;">
+            <b>&emsp;&emsp;&emsp;&emsp;10:10</b>&emsp;&emsp;&emsp;&emsp;&emsp;33h 05m&emsp;&emsp;&emsp;&emsp;&emsp;<b>19:05</b>
+            &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;<b>&#8377;3,189</b><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp; 
+            Goa &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;Non-Stop&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;Delhi
+            <button id="button" onclick="fbooking('Goa','Delhi',3189,'33h 05m')" style="position: relative; left: 250px; top: -20px; background-color: skyblue; height: 30px; width: 100px; border-radius: 50px;">
+            <b>Book Now</b>
+            </button>
+        </p>
+
+        <p class="train">
+            <img src="../static/irctc.png" height="50px" width="50px" style="position: relative; top: 25px; left: 25px;">
+            <b>&emsp;&emsp;&emsp;&emsp;06:55</b>&emsp;&emsp;&emsp;&emsp;&emsp;08h 00m&emsp;&emsp;&emsp;&emsp;&emsp;<b>14:55</b>
+            &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;<b>&#8377;1,000 </b><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;
+            Goa &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;Non-Stop&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;Mumbai&nbsp;
+            <button id="button" onclick="fbooking('Goa','Mumbai',1000,'08h 00m')" style="position: relative; left: 225px; top: -20px; background-color: skyblue; height: 30px; width: 100px; border-radius: 50px;">
+                <b>Book Now</b>
+            </button>
+        </p>
+
+        <p class="train">
+            <img src="../static/irctc.png" height="50px" width="50px" style="position: relative; top: 25px; left: 25px;">
+            <b>&emsp;&emsp;&emsp;&emsp;01:00</b>&emsp;&emsp;&emsp;&emsp;&emsp;12h 25m&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;<b>13:25</b>
+            &emsp;&emsp;&emsp;&emsp;&emsp;<b>&#8377;1,099</b><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Goa &emsp;&emsp;&emsp;&emsp;&emsp;Non-Stop&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;Bangalore&nbsp;&nbsp;
+            <button id="button" onclick="fbooking('Goa','Bangalore',1099,'12h 25m')" style="position: relative; left: 210px; top: -20px; background-color: skyblue; height: 30px; width: 100px; border-radius: 50px;">
+                <b>Book Now</b>
+            </button>
+        </p>
+
+        <p class="train">
+            <img src="../static/irctc.png" height="50px" width="50px" style="position: relative; top: 25px; left: 25px;">
+            <b>&emsp;&emsp;&emsp;&emsp;12:20</b>&emsp;&emsp;&emsp;&emsp;&emsp;01h 45m&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;<b>14:05</b>
+            &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;<b>&#8377;4,194 </b><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Goa &emsp;&emsp;&emsp;&emsp;&emsp;Non-Stop&emsp;&emsp;&emsp;&emsp;Ahmedabad&emsp;
+            <button id="button" onclick="fbooking('Goa','Ahmedabad',4194,'01h 45m')" style="position: relative; left: 195px; top: -20px; background-color: skyblue; height: 30px; width: 100px; border-radius: 50px;">
+                <b>Book Now</b>
+            </button>
+        </p>
+
+        <div class="copyrights">
+            <span class="copy">
+                &copy; 2023 WANDERLUST PVT.LTD.<br>Country India
+            </span>
+            <span class="social-media">
+                <i class="fab fa-facebook"></i>&emsp;<i class="fab fa-instagram"></i>&emsp;<i class="fab fa-twitter"></i>
+            </span>            
+        </div>
+    </body>
+</html>
